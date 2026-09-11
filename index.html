@@ -7,25 +7,25 @@
 <script src="https://cdn.tailwindcss.com"></script>
 <script>
 tailwind.config = {
-theme: {
-extend: {
-fontFamily: {
-cairo: ['Cairo','sans-serif'],
-taj: ['Tajawal','sans-serif'],
-amiri: ['Amiri','serif'],
-},
-colors: {
-navy: {900:'#07142b',800:'#0b1d3a',700:'#132a52',600:'#1a3a6e'},
-gold: {DEFAULT:'#c9a227', light:'#e8c86a', dark:'#8a6f14'},
-tealx:'#0ea5a4',
-sand:'#f7f3e8'
-},
-boxShadow: {
-luxe: '0 20px 60px -15px rgba(0,0,0,.35)',
-card: '0 10px 40px -10px rgba(11,29,58,.18)'
-}
-}
-}
+  theme: {
+    extend: {
+      fontFamily: {
+        cairo: ['Cairo','sans-serif'],
+        taj: ['Tajawal','sans-serif'],
+        amiri: ['Amiri','serif'],
+      },
+      colors: {
+        navy: {900:'#07142b',800:'#0b1d3a',700:'#132a52',600:'#1a3a6e'},
+        gold: {DEFAULT:'#c9a227', light:'#e8c86a', dark:'#8a6f14'},
+        tealx:'#0ea5a4',
+        sand:'#f7f3e8'
+      },
+      boxShadow: {
+        luxe: '0 20px 60px -15px rgba(0,0,0,.35)',
+        card: '0 10px 40px -10px rgba(11,29,58,.18)'
+      }
+    }
+  }
 }
 </script>
 <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;600;700;800;900&family=Tajawal:wght@300;400;500;700;800&family=Amiri:wght@400;700&display=swap" rel="stylesheet">
@@ -104,328 +104,1137 @@ body{font-family:'Cairo',sans-serif;background:#f7f3e8;color:#0b1d3a;overflow-x:
 
 <!-- TOP MINISTRY BAR -->
 <div class="bg-navy-900 text-white text-sm no-print">
-<div class="max-w-7xl mx-auto px-4 py-2 flex flex-wrap items-center justify-between gap-2">
-<div class="flex items-center gap-3">
-<div class="w-9 h-9 rounded-full badge-tn flex items-center justify-center border-2 border-white/30 shadow-lg relative overflow-hidden">
-<div class="w-5 h-5 bg-white rounded-full flex items-center justify-center">
-<div class="text-[#e70013] font-black text-[10px] leading-none">★<span class="text-[7px]">☪</span></div>
-</div>
-</div>
-<div class="leading-tight">
-<div class="font-black text-[13px]">الجمهوريّة التونسيّة — وزارة التربية</div>
-<div class="text-white/60 text-[11px]">التعليم الثانوي • مادّة الجغرافيا • السنة الدراسية 2026 / 2027</div>
-</div>
-</div>
-<div class="flex items-center gap-2 text-[12px]">
-<span class="bg-white/10 border border-white/15 rounded-full px-3 py-1"><i class="fa-solid fa-graduation-cap text-gold ml-1"></i> الرابعة آداب</span>
-<span class="bg-gold text-navy-900 font-black rounded-full px-3 py-1">المحور: العولمة والمبادلات</span>
-</div>
-</div>
+  <div class="max-w-7xl mx-auto px-4 py-2 flex flex-wrap items-center justify-between gap-2">
+    <div class="flex items-center gap-3">
+      <div class="w-9 h-9 rounded-full badge-tn flex items-center justify-center border-2 border-white/30 shadow-lg relative overflow-hidden">
+        <div class="w-5 h-5 bg-white rounded-full flex items-center justify-center">
+          <div class="text-[#e70013] font-black text-[10px] leading-none">★<span class="text-[7px]">☪</span></div>
+        </div>
+      </div>
+      <div class="leading-tight">
+        <div class="font-black text-[13px]">الجمهوريّة التونسيّة — وزارة التربية</div>
+        <div class="text-white/60 text-[11px]">التعليم الثانوي • مادّة الجغرافيا • السنة الدراسية 2026 / 2027</div>
+      </div>
+    </div>
+    <div class="flex items-center gap-2 text-[12px]">
+      <span class="bg-white/10 border border-white/15 rounded-full px-3 py-1"><i class="fa-solid fa-graduation-cap text-gold ml-1"></i> الرابعة آداب</span>
+      <span class="bg-gold text-navy-900 font-black rounded-full px-3 py-1">المحور: العولمة والمبادلات</span>
+    </div>
+  </div>
 </div>
 
 <!-- NAV -->
 <nav id="mainNav" class="sticky top-0 z-50 bg-navy-800/95 backdrop-blur-xl border-b border-gold/20 shadow-luxe no-print">
-<div class="max-w-7xl mx-auto px-4 flex items-center justify-between h-[68px]">
-<a href="#hero" class="flex items-center gap-3">
-<div class="w-11 h-11 rounded-xl gold-grad flex items-center justify-center shadow-lg rotate-3">
-<i class="fa-solid fa-earth-africa text-navy-900 text-xl"></i>
-</div>
-<div class="leading-tight">
-<div class="font-black text-white text-[15px]">أدفاق التجارة العالميّة</div>
-<div class="text-gold-light text-[11px] font-bold">أ. رياض سليمي • منصّة الدرس التفاعلية</div>
-</div>
-</a>
-<div class="hidden lg:flex items-center gap-5 text-[13.5px] font-bold text-white/85">
-<a href="#objectives" class="nav-link hover:text-gold-light">الأهداف</a>
-<a href="#concepts" class="nav-link hover:text-gold-light">المفاهيم</a>
-<a href="#intro" class="nav-link hover:text-gold-light">المقدمة والإشكالية</a>
-<a href="#element1" class="nav-link hover:text-gold-light">العنصر الأول</a>
-<a href="#element2" class="nav-link hover:text-gold-light">العنصر الثاني</a>
-<a href="#conclusion" class="nav-link hover:text-gold-light">الخاتمة</a>
-<a href="#quiz" class="bg-gold hover:bg-gold-light text-navy-900 px-4 py-2 rounded-full font-black transition flex items-center gap-2"><i class="fa-solid fa-brain"></i> اختبر نفسك</a>
-</div>
-<button id="menuBtn" class="lg:hidden text-gold text-2xl w-11 h-11 rounded-xl bg-white/10 border border-white/15"><i class="fa-solid fa-bars"></i></button>
-</div>
-<div id="mobileMenu" class="lg:hidden hidden bg-navy-900 border-t border-white/10 px-4 py-4 space-y-2 text-white font-bold">
-<a href="#objectives" class="block py-2 border-b border-white/10">🎯 الأهداف</a>
-<a href="#concepts" class="block py-2 border-b border-white/10">📚 المفاهيم</a>
-<a href="#intro" class="block py-2 border-b border-white/10">🧭 المقدمة والإشكالية</a>
-<a href="#element1" class="block py-2 border-b border-white/10">📦 العنصر الأول</a>
-<a href="#element2" class="block py-2 border-b border-white/10">📈 العنصر الثاني</a>
-<a href="#conclusion" class="block py-2 border-b border-white/10">🏁 الخاتمة</a>
-<a href="#quiz" class="block py-2 text-gold">🧠 الاختبار التفاعلي</a>
-</div>
+  <div class="max-w-7xl mx-auto px-4 flex items-center justify-between h-[68px]">
+    <a href="#hero" class="flex items-center gap-3">
+      <div class="w-11 h-11 rounded-xl gold-grad flex items-center justify-center shadow-lg rotate-3">
+        <i class="fa-solid fa-earth-africa text-navy-900 text-xl"></i>
+      </div>
+      <div class="leading-tight">
+        <div class="font-black text-white text-[15px]">أدفاق التجارة العالميّة</div>
+        <div class="text-gold-light text-[11px] font-bold">أ. رياض سليمي • منصّة الدرس التفاعلية</div>
+      </div>
+    </a>
+    <div class="hidden lg:flex items-center gap-5 text-[13.5px] font-bold text-white/85">
+      <a href="#objectives" class="nav-link hover:text-gold-light">الأهداف</a>
+      <a href="#concepts" class="nav-link hover:text-gold-light">المفاهيم</a>
+      <a href="#intro" class="nav-link hover:text-gold-light">المقدمة والإشكالية</a>
+      <a href="#element1" class="nav-link hover:text-gold-light">العنصر الأول</a>
+      <a href="#element2" class="nav-link hover:text-gold-light">العنصر الثاني</a>
+      <a href="#conclusion" class="nav-link hover:text-gold-light">الخاتمة</a>
+      <a href="#quiz" class="bg-gold hover:bg-gold-light text-navy-900 px-4 py-2 rounded-full font-black transition flex items-center gap-2"><i class="fa-solid fa-brain"></i> اختبر نفسك</a>
+    </div>
+    <button id="menuBtn" class="lg:hidden text-gold text-2xl w-11 h-11 rounded-xl bg-white/10 border border-white/15"><i class="fa-solid fa-bars"></i></button>
+  </div>
+  <div id="mobileMenu" class="lg:hidden hidden bg-navy-900 border-t border-white/10 px-4 py-4 space-y-2 text-white font-bold">
+    <a href="#objectives" class="block py-2 border-b border-white/10">🎯 الأهداف</a>
+    <a href="#concepts" class="block py-2 border-b border-white/10">📚 المفاهيم</a>
+    <a href="#intro" class="block py-2 border-b border-white/10">🧭 المقدمة والإشكالية</a>
+    <a href="#element1" class="block py-2 border-b border-white/10">📦 العنصر الأول</a>
+    <a href="#element2" class="block py-2 border-b border-white/10">📈 العنصر الثاني</a>
+    <a href="#conclusion" class="block py-2 border-b border-white/10">🏁 الخاتمة</a>
+    <a href="#quiz" class="block py-2 text-gold">🧠 الاختبار التفاعلي</a>
+  </div>
 </nav>
 
 <!-- HERO -->
 <header id="hero" class="relative min-h-[92vh] flex items-center overflow-hidden bg-navy-900">
-<div class="absolute inset-0">
-<img src="https://images.unsplash.com/photo-1494412574643-ff11b0a5c1c3?q=80&w=2000&auto=format&fit=crop" class="w-full h-full object-cover opacity-30" alt="container ship">
-<div class="absolute inset-0 bg-gradient-to-b from-navy-900/70 via-navy-800/85 to-navy-900"></div>
-<div class="absolute inset-0 grid-bg opacity-60"></div>
-<div class="hero-globe w-[550px] h-[550px] -left-[120px] top-[10%] opacity-40" style="animation:globeSpin 40s linear infinite">
-<div class="absolute inset-6 border border-gold/20 rounded-full"></div>
-<div class="absolute inset-14 border border-white/10 rounded-full"></div>
-<div class="absolute top-1/2 left-0 right-0 h-px bg-gold/20"></div>
-<div class="absolute left-1/2 top-0 bottom-0 w-px bg-gold/20"></div>
-</div>
-<div class="hero-globe w-[300px] h-[300px] left-[180px] top-[25%] opacity-20"></div>
-</div>
+  <div class="absolute inset-0">
+    <img src="https://images.unsplash.com/photo-1494412574643-ff11b0a5c1c3?q=80&w=2000&auto=format&fit=crop" class="w-full h-full object-cover opacity-30" alt="container ship">
+    <div class="absolute inset-0 bg-gradient-to-b from-navy-900/70 via-navy-800/85 to-navy-900"></div>
+    <div class="absolute inset-0 grid-bg opacity-60"></div>
+    <div class="hero-globe w-[550px] h-[550px] -left-[120px] top-[10%] opacity-40" style="animation:globeSpin 40s linear infinite">
+      <div class="absolute inset-6 border border-gold/20 rounded-full"></div>
+      <div class="absolute inset-14 border border-white/10 rounded-full"></div>
+      <div class="absolute top-1/2 left-0 right-0 h-px bg-gold/20"></div>
+      <div class="absolute left-1/2 top-0 bottom-0 w-px bg-gold/20"></div>
+    </div>
+    <div class="hero-globe w-[300px] h-[300px] left-[180px] top-[25%] opacity-20"></div>
+  </div>
 
-<div class="relative max-w-7xl mx-auto px-4 py-16 grid lg:grid-cols-2 gap-12 items-center w-full">
-<div>
-<div class="flex flex-wrap gap-2 mb-6">
-<span class="chip bg-gold text-navy-900"><i class="fa-solid fa-book-open ml-1"></i> درس الجغرافيا • 4 آداب</span>
-<span class="chip glass text-white">المنهاج الرسمي التونسي 26/27</span>
-<span class="chip glass text-gold-light border !border-gold/40">تفاعلي + خرائط + مبيانات</span>
-</div>
-<h1 class="text-4xl md:text-6xl font-black leading-[1.15] text-white mb-4">
-درس <span class="text-gold-grad">أدفاق التجارة</span><br>العالميّة
-</h1>
-<p class="font-amiri text-xl md:text-2xl text-white/80 leading-relaxed mb-6">من الثالوث العالمي إلى القطب الآسيوي الصاعد… رحلة تفاعلية لفهم بنية المبادلات، اتجاهاتها، وأطرافها المهيمنة والمهمّشة.</p>
-<div class="flex items-center gap-4 bg-white/5 border border-white/10 rounded-2xl p-4 mb-8 backdrop-blur">
- 
-<div>
-<div class="text-white font-black">إعداد الأستاذ: رياض سليمي</div>
-<div class="text-white/60 text-sm">أستاذ الجغرافيا • التعليم الثانوي • الجمهورية التونسية</div>
-<div class="flex gap-2 mt-2 text-[11px]">
-<span class="bg-emerald-500/20 text-emerald-300 border border-emerald-400/30 rounded-full px-2 py-0.5"><i class="fa-solid fa-circle-check ml-1"></i> مطابق للبرنامج الرسمي</span>
-<span class="bg-gold/20 text-gold-light border border-gold/30 rounded-full px-2 py-0.5">2026-2027</span>
-</div>
-</div>
-</div>
-<div class="flex flex-wrap gap-3 no-print">
-<a href="#objectives" class="gold-grad text-navy-900 font-black px-7 py-3.5 rounded-2xl shadow-luxe hover:scale-105 transition flex items-center gap-2"><i class="fa-solid fa-play"></i> ابدأ الدرس الآن</a>
-<a href="#mapSection" class="glass text-white font-black px-7 py-3.5 rounded-2xl hover:bg-white/15 transition flex items-center gap-2"><i class="fa-solid fa-map-location-dot text-gold"></i> استكشف الخريطة</a>
-<button onclick="window.print()" class="border border-white/20 text-white/80 px-5 py-3.5 rounded-2xl hover:bg-white/10 transition"><i class="fa-solid fa-print ml-1"></i> طباعة</button>
-</div>
-<div class="mt-8 flex items-center gap-6 text-white/50 text-sm">
-<span><i class="fa-solid fa-clock text-gold ml-1"></i> 2 حصص • 8 محطات</span>
-<span><i class="fa-solid fa-chart-line text-gold ml-1"></i> 4 مبيانات تفاعلية</span>
-<span><i class="fa-solid fa-list-check text-gold ml-1"></i> اختبار 8 أسئلة</span>
-</div>
-</div>
+  <div class="relative max-w-7xl mx-auto px-4 py-16 grid lg:grid-cols-2 gap-12 items-center w-full">
+    <div>
+      <div class="flex flex-wrap gap-2 mb-6">
+        <span class="chip bg-gold text-navy-900"><i class="fa-solid fa-book-open ml-1"></i> درس الجغرافيا • 4 آداب</span>
+        <span class="chip glass text-white">المنهاج الرسمي التونسي 26/27</span>
+        <span class="chip glass text-gold-light border !border-gold/40">تفاعلي + خرائط + مبيانات</span>
+      </div>
+      <h1 class="text-4xl md:text-6xl font-black leading-[1.15] text-white mb-4">
+        درس <span class="text-gold-grad">أدفاق التجارة</span><br>العالميّة
+      </h1>
+      <p class="font-amiri text-xl md:text-2xl text-white/80 leading-relaxed mb-6">من الثالوث العالمي إلى القطب الآسيوي الصاعد… رحلة تفاعلية لفهم بنية المبادلات، اتجاهاتها، وأطرافها المهيمنة والمهمّشة.</p>
+      <div class="flex items-center gap-4 bg-white/5 border border-white/10 rounded-2xl p-4 mb-8 backdrop-blur">
+        
 
-<div class="relative">
-<div class="glass rounded-[28px] p-6 md:p-8 shadow-luxe relative overflow-hidden">
-<div class="absolute top-0 right-0 left-0 shine-line"></div>
-<div class="flex items-center justify-between mb-6">
-<h3 class="text-white font-black text-lg"><i class="fa-solid fa-gauge-high text-gold ml-2"></i> التجارة العالمية في أرقام حيّة</h3>
-<span class="text-[11px] bg-red-500/20 text-red-300 border border-red-400/30 rounded-full px-3 py-1 animate-pulse"><span class="inline-block w-2 h-2 bg-red-400 rounded-full ml-1"></span> مباشر 2026</span>
-</div>
-<div class="grid grid-cols-2 gap-4 mb-6">
-<div class="stat-card bg-navy-900/70 border border-white/10 rounded-2xl p-5 text-center">
-<div class="text-3xl md:text-4xl font-black text-gold-grad"><span class="counter" data-target="32">0</span><span class="text-lg">T$`</span></div>
-<div class="text-white/70 text-xs font-bold mt-1">إجمالي التجارة العالمية سنوياً</div>
-<div class="text-emerald-400 text-[11px] font-bold mt-2"><i class="fa-solid fa-arrow-trend-up"></i> +4.2% نمو</div>
-</div>
-<div class="stat-card bg-navy-900/70 border border-white/10 rounded-2xl p-5 text-center">
-<div class="text-3xl md:text-4xl font-black text-white"><span class="counter" data-target="70">0</span><span class="text-lg text-gold">%</span></div>
-<div class="text-white/70 text-xs font-bold mt-1">حصة السلع المصنّعة</div>
-<div class="w-full bg-white/10 rounded-full h-1.5 mt-3"><div class="h-full gold-grad rounded-full" style="width:70%"></div></div>
-</div>
-<div class="stat-card bg-navy-900/70 border border-white/10 rounded-2xl p-5 text-center">
-<div class="text-3xl md:text-4xl font-black text-white"><span class="counter" data-target="60">0</span><span class="text-lg text-gold">%</span></div>
-<div class="text-white/70 text-xs font-bold mt-1">يتحكم فيها الثالوث + الصين</div>
-<div class="text-white/40 text-[11px] mt-2">EU • USA • الصين</div>
-</div>
-<div class="stat-card bg-navy-900/70 border border-white/10 rounded-2xl p-5 text-center">
-<div class="text-3xl md:text-4xl font-black text-red-300"><span class="counter" data-target="2">0</span><span class="text-lg">%</span></div>
-<div class="text-white/70 text-xs font-bold mt-1">حصة البلدان الأقل نمواً</div>
-<div class="text-red-400/80 text-[11px] mt-2">تهميش هيكلي</div>
-</div>
-</div>
-<!-- mini flow viz -->
-<div class="bg-navy-900/60 border border-white/10 rounded-2xl p-4">
-<div class="flex justify-between text-[11px] font-black text-white/60 mb-3"><span>شمال ← شمال (+50%)</span><span>شمال ← جنوب</span><span>جنوب ← جنوب</span></div>
-<svg viewBox="0 0 400 90" class="w-full h-[80px]">
-<defs><marker id="arr" markerWidth="8" markerHeight="8" refX="6" refY="3" orient="auto"><path d="M0,0 L6,3 L0,6" fill="none" stroke="#c9a227" stroke-width="1.5"/></marker></defs>
-<line x1="10" y1="20" x2="380" y2="20" stroke="#c9a227" stroke-width="7" stroke-linecap="round" opacity=".9" class="flow-path" marker-end="url(#arr)"/>
-<line x1="10" y1="50" x2="280" y2="50" stroke="#0ea5a4" stroke-width="4" stroke-linecap="round" opacity=".8" class="flow-path" marker-end="url(#arr)"/>
-<line x1="10" y1="75" x2="170" y2="75" stroke="#64748b" stroke-width="2.5" stroke-linecap="round" opacity=".7" class="flow-path" marker-end="url(#arr)"/>
-</svg>
-<div class="text-center text-[11px] text-white/40 font-bold">سُمك السهم = كثافة الأدفاق • المحور شمال-شمال يهيمن على أكثر من نصف التجارة</div>
-</div>
-</div>
-<div class="absolute -bottom-5 -right-5 gold-grad rounded-2xl px-5 py-3 shadow-luxe rotate-[-3deg] animate-floaty">
-<div class="text-navy-900 font-black text-sm"><i class="fa-solid fa-trophy ml-1"></i> الصين: أكبر مصدّر عالمي للسلع</div>
-</div>
-</div>
-</div>
-<div class="absolute bottom-0 right-0 left-0 h-[70px] bg-sand" style="clip-path:ellipse(60% 100% at 50% 100%)"></div>
+        
+        <div>
+          <div class="text-white font-black">إعداد الأستاذ: رياض سليمي</div>
+          <div class="text-white/60 text-sm">أستاذ الجغرافيا • التعليم الثانوي • الجمهورية التونسية</div>
+          <div class="flex gap-2 mt-2 text-[11px]">
+            <span class="bg-emerald-500/20 text-emerald-300 border border-emerald-400/30 rounded-full px-2 py-0.5"><i class="fa-solid fa-circle-check ml-1"></i> مطابق للبرنامج الرسمي</span>
+            <span class="bg-gold/20 text-gold-light border border-gold/30 rounded-full px-2 py-0.5">2026-2027</span>
+          </div>
+        </div>
+      </div>
+      <div class="flex flex-wrap gap-3 no-print">
+        <a href="#objectives" class="gold-grad text-navy-900 font-black px-7 py-3.5 rounded-2xl shadow-luxe hover:scale-105 transition flex items-center gap-2"><i class="fa-solid fa-play"></i> ابدأ الدرس الآن</a>
+        <a href="#mapSection" class="glass text-white font-black px-7 py-3.5 rounded-2xl hover:bg-white/15 transition flex items-center gap-2"><i class="fa-solid fa-map-location-dot text-gold"></i> استكشف الخريطة</a>
+        <button onclick="window.print()" class="border border-white/20 text-white/80 px-5 py-3.5 rounded-2xl hover:bg-white/10 transition"><i class="fa-solid fa-print ml-1"></i> طباعة</button>
+      </div>
+      <div class="mt-8 flex items-center gap-6 text-white/50 text-sm">
+        <span><i class="fa-solid fa-clock text-gold ml-1"></i> 2 حصص • 8 محطات</span>
+        <span><i class="fa-solid fa-chart-line text-gold ml-1"></i> 4 مبيانات تفاعلية</span>
+        <span><i class="fa-solid fa-list-check text-gold ml-1"></i> اختبار 8 أسئلة</span>
+      </div>
+    </div>
+
+    <div class="relative">
+      <div class="glass rounded-[28px] p-6 md:p-8 shadow-luxe relative overflow-hidden">
+        <div class="absolute top-0 right-0 left-0 shine-line"></div>
+        <div class="flex items-center justify-between mb-6">
+          <h3 class="text-white font-black text-lg"><i class="fa-solid fa-gauge-high text-gold ml-2"></i> التجارة العالمية في أرقام حيّة</h3>
+          <span class="text-[11px] bg-red-500/20 text-red-300 border border-red-400/30 rounded-full px-3 py-1 animate-pulse"><span class="inline-block w-2 h-2 bg-red-400 rounded-full ml-1"></span> مباشر 2026</span>
+        </div>
+        <div class="grid grid-cols-2 gap-4 mb-6">
+          <div class="stat-card bg-navy-900/70 border border-white/10 rounded-2xl p-5 text-center">
+            <div class="text-3xl md:text-4xl font-black text-gold-grad"><span class="counter" data-target="32">0</span><span class="text-lg">T$</span></div>
+            <div class="text-white/70 text-xs font-bold mt-1">إجمالي التجارة العالمية سنوياً</div>
+            <div class="text-emerald-400 text-[11px] font-bold mt-2"><i class="fa-solid fa-arrow-trend-up"></i> +4.2% نمو</div>
+          </div>
+          <div class="stat-card bg-navy-900/70 border border-white/10 rounded-2xl p-5 text-center">
+            <div class="text-3xl md:text-4xl font-black text-white"><span class="counter" data-target="70">0</span><span class="text-lg text-gold">%</span></div>
+            <div class="text-white/70 text-xs font-bold mt-1">حصة السلع المصنّعة</div>
+            <div class="w-full bg-white/10 rounded-full h-1.5 mt-3"><div class="h-full gold-grad rounded-full" style="width:70%"></div></div>
+          </div>
+          <div class="stat-card bg-navy-900/70 border border-white/10 rounded-2xl p-5 text-center">
+            <div class="text-3xl md:text-4xl font-black text-white"><span class="counter" data-target="60">0</span><span class="text-lg text-gold">%</span></div>
+            <div class="text-white/70 text-xs font-bold mt-1">يتحكم فيها الثالوث + الصين</div>
+            <div class="text-white/40 text-[11px] mt-2">EU • USA • الصين</div>
+          </div>
+          <div class="stat-card bg-navy-900/70 border border-white/10 rounded-2xl p-5 text-center">
+            <div class="text-3xl md:text-4xl font-black text-red-300"><span class="counter" data-target="2">0</span><span class="text-lg">%</span></div>
+            <div class="text-white/70 text-xs font-bold mt-1">حصة البلدان الأقل نمواً</div>
+            <div class="text-red-400/80 text-[11px] mt-2">تهميش هيكلي</div>
+          </div>
+        </div>
+        <!-- mini flow viz -->
+        <div class="bg-navy-900/60 border border-white/10 rounded-2xl p-4">
+          <div class="flex justify-between text-[11px] font-black text-white/60 mb-3"><span>شمال ← شمال (+50%)</span><span>شمال ← جنوب</span><span>جنوب ← جنوب</span></div>
+          <svg viewBox="0 0 400 90" class="w-full h-[80px]">
+            <defs><marker id="arr" markerWidth="8" markerHeight="8" refX="6" refY="3" orient="auto"><path d="M0,0 L6,3 L0,6" fill="none" stroke="#c9a227" stroke-width="1.5"/></marker></defs>
+            <line x1="10" y1="20" x2="380" y2="20" stroke="#c9a227" stroke-width="7" stroke-linecap="round" opacity=".9" class="flow-path" marker-end="url(#arr)"/>
+            <line x1="10" y1="50" x2="280" y2="50" stroke="#0ea5a4" stroke-width="4" stroke-linecap="round" opacity=".8" class="flow-path" marker-end="url(#arr)"/>
+            <line x1="10" y1="75" x2="170" y2="75" stroke="#64748b" stroke-width="2.5" stroke-linecap="round" opacity=".7" class="flow-path" marker-end="url(#arr)"/>
+          </svg>
+          <div class="text-center text-[11px] text-white/40 font-bold">سُمك السهم = كثافة الأدفاق • المحور شمال-شمال يهيمن على أكثر من نصف التجارة</div>
+        </div>
+      </div>
+      <div class="absolute -bottom-5 -right-5 gold-grad rounded-2xl px-5 py-3 shadow-luxe rotate-[-3deg] animate-floaty">
+        <div class="text-navy-900 font-black text-sm"><i class="fa-solid fa-trophy ml-1"></i> الصين: أكبر مصدّر عالمي للسلع</div>
+      </div>
+    </div>
+  </div>
+  <div class="absolute bottom-0 right-0 left-0 h-[70px] bg-sand" style="clip-path:ellipse(60% 100% at 50% 100%)"></div>
 </header>
 
 <!-- MARQUEE -->
 <div class="bg-navy-900 text-gold-light py-2.5 overflow-hidden border-y border-gold/20 no-print" dir="ltr">
-<div class="whitespace-nowrap font-bold text-[13px]" style="animation:marquee 28s linear infinite; display:inline-block; min-width:200%">
-<span dir="rtl">⚓ الحاويات خفّضت كلفة النقل البحري   ✦   منظمة التجارة العالمية OMC تحرّر المبادلات   ✦   الخدمات الرقمية تتجاوز 7 تريليونات $ &nbsp; ✦ &nbsp; الثالوث: أمريكا الشمالية • أوروبا • شرق آسيا &nbsp; ✦ &nbsp; تدهور شروط التبادل يعمّق تبعية الجنوب &nbsp; ✦ &nbsp;&lt;/span&gt; &lt;span dir="rtl"&gt;⚓ الحاويات خفّضت كلفة النقل البحري &nbsp; ✦ &nbsp; منظمة التجارة العالمية OMC تحرّر المبادلات &nbsp; ✦ &nbsp; الخدمات الرقمية تتجاوز 7 تريليونات $   ✦   الثالوث: أمريكا الشمالية • أوروبا • شرق آسيا   ✦   تدهور شروط التبادل يعمّق تبعية الجنوب   ✦  </span>
-</div>
+  <div class="whitespace-nowrap font-bold text-[13px]" style="animation:marquee 28s linear infinite; display:inline-block; min-width:200%">
+    <span dir="rtl">⚓ الحاويات خفّضت كلفة النقل البحري &nbsp; ✦ &nbsp; منظمة التجارة العالمية OMC تحرّر المبادلات &nbsp; ✦ &nbsp; الخدمات الرقمية تتجاوز 7 تريليونات $ &nbsp; ✦ &nbsp; الثالوث: أمريكا الشمالية • أوروبا • شرق آسيا &nbsp; ✦ &nbsp; تدهور شروط التبادل يعمّق تبعية الجنوب &nbsp; ✦ &nbsp;</span>
+    <span dir="rtl">⚓ الحاويات خفّضت كلفة النقل البحري &nbsp; ✦ &nbsp; منظمة التجارة العالمية OMC تحرّر المبادلات &nbsp; ✦ &nbsp; الخدمات الرقمية تتجاوز 7 تريليونات $ &nbsp; ✦ &nbsp; الثالوث: أمريكا الشمالية • أوروبا • شرق آسيا &nbsp; ✦ &nbsp; تدهور شروط التبادل يعمّق تبعية الجنوب &nbsp; ✦ &nbsp;</span>
+  </div>
 </div>
 
 <main class="max-w-7xl mx-auto px-4">
 
 <!-- OBJECTIVES -->
 <section id="objectives" class="py-16 scroll-mt-24">
-<div class="text-center mb-10 reveal">
-<div class="ornament text-gold font-black text-sm mb-3">✦ المحطة الأولى ✦</div>
-<h2 class="text-3xl md:text-4xl font-black section-title">تحديد الأهداف: المعرفية والمهارية والسلوكية</h2>
-<p class="text-slate-600 mt-6 max-w-3xl mx-auto">وفق منهاج الجغرافيا للسنة الرابعة آداب — وزارة التربية التونسية. اضغط على أي بطاقة لتفصيل مؤشرات النجاح.</p>
-</div>
-<div class="grid md:grid-cols-3 gap-6">
-<div class="reveal bg-white rounded-3xl shadow-card border-t-4 border-navy-800 overflow-hidden group hover:-translate-y-2 transition duration-500">
-<div class="bg-gradient-to-br from-navy-800 to-navy-600 p-6 text-white relative overflow-hidden">
-<i class="fa-solid fa-brain absolute -left-4 -bottom-4 text-[90px] opacity-10 group-hover:scale-110 transition"></i>
-<div class="w-14 h-14 rounded-2xl bg-gold flex items-center justify-center text-navy-900 text-2xl mb-4 shadow-lg"><i class="fa-solid fa-lightbulb"></i></div>
-<h3 class="font-black text-xl">الأهداف المعرفية <span class="text-gold-light text-sm font-bold">(Savoirs)</span></h3>
-<p class="text-white/70 text-sm">أن يكون المتعلم قادراً في نهاية الدرس على…</p>
-</div>
-<ul class="p-6 space-y-3 text-[14px] font-medium text-slate-700">
-<li class="flex gap-3 bg-sand/70 rounded-xl p-3"><span class="w-7 h-7 shrink-0 rounded-full bg-navy-800 text-gold font-black flex items-center justify-center text-sm">1</span> التعرّف على أصناف الأدفاق التجارية العالمية (مصنّعة، فلاحية، طاقية، خدمات) ونِسَبها.</li>
-<li class="flex gap-3 bg-sand/70 rounded-xl p-3"><span class="w-7 h-7 shrink-0 rounded-full bg-navy-800 text-gold font-black flex items-center justify-center text-sm">2</span> تفسير بنية التجارة العالمية: هيمنة المصنوعات والطفرة الرقمية للخدمات.</li>
-<li class="flex gap-3 bg-sand/70 rounded-xl p-3"><span class="w-7 h-7 shrink-0 rounded-full bg-navy-800 text-gold font-black flex items-center justify-center text-sm">3</span> تحديد الأطراف المتدخلة وتصنيفها (رئيسية / ثانوية / مهمّشة) وحصصها.</li>
-<li class="flex gap-3 bg-sand/70 rounded-xl p-3"><span class="w-7 h-7 shrink-0 rounded-full bg-navy-800 text-gold font-black flex items-center justify-center text-sm">4</span> استنتاج عوامل تنامي الأدفاق: التحرير الجمركي، الحاويات، الشركات متعددة الجنسيات.</li>
-</ul>
-<div class="px-6 pb-6"><div class="text-xs font-black text-navy-800 mb-2">مؤشر الإنجاز المستهدف 90%</div><div class="h-2 bg-slate-100 rounded-full"><div class="obj-bar h-full gold-grad rounded-full transition-all duration-1000" style="width:0%" data-w="90%"></div></div></div>
-</div>
-<div class="reveal bg-white rounded-3xl shadow-card border-t-4 border-gold overflow-hidden group hover:-translate-y-2 transition duration-500" style="transition-delay:.1s">
-<div class="bg-gradient-to-br from-[#8a6f14] to-[#c9a227] p-6 text-white relative overflow-hidden">
-<i class="fa-solid fa-compass-drafting absolute -left-4 -bottom-4 text-[90px] opacity-15 group-hover:rotate-12 transition"></i>
-<div class="w-14 h-14 rounded-2xl bg-white flex items-center justify-center text-gold-dark text-2xl mb-4 shadow-lg"><i class="fa-solid fa-screwdriver-wrench"></i></div>
-<h3 class="font-black text-xl">الأهداف المهارية <span class="text-white/80 text-sm font-bold">(Savoir-faire)</span></h3>
-<p class="text-white/80 text-sm">توظيف الأدوات الجغرافية والمنهجية…</p>
-</div>
-<ul class="p-6 space-y-3 text-[14px] font-medium text-slate-700">
-<li class="flex gap-3 bg-amber-50 border border-amber-100 rounded-xl p-3"><span class="w-7 h-7 shrink-0 rounded-full gold-grad text-navy-900 font-black flex items-center justify-center text-sm">1</span> قراءة خريطة أدفاق التجارة العالمية وتحديد المحاور الكبرى (شمال-شمال…).</li>
-<li class="flex gap-3 bg-amber-50 border border-amber-100 rounded-xl p-3"><span class="w-7 h-7 shrink-0 rounded-full gold-grad text-navy-900 font-black flex items-center justify-center text-sm">2</span> تحليل مبيان نموّ التجارة (1980 ← 2026) واستخلاص الاتجاه العام.</li>
-<li class="flex gap-3 bg-amber-50 border border-amber-100 rounded-xl p-3"><span class="w-7 h-7 shrink-0 rounded-full gold-grad text-navy-900 font-black flex items-center justify-center text-sm">3</span> إنجاز وقراءة جدول القطاعات: القيمة، الحجم، ونسبة المساهمة.</li>
-<li class="flex gap-3 bg-amber-50 border border-amber-100 rounded-xl p-3"><span class="w-7 h-7 shrink-0 rounded-full gold-grad text-navy-900 font-black flex items-center justify-center text-sm">4</span> تحرير فقرة منهجية مفسِّرة للتفاوت بين الأطراف بأسلوب جغرافي سليم.</li>
-</ul>
-<div class="px-6 pb-6"><div class="text-xs font-black text-gold-dark mb-2">مؤشر الإنجاز المستهدف 85%</div><div class="h-2 bg-slate-100 rounded-full"><div class="obj-bar h-full gold-grad rounded-full transition-all duration-1000" style="width:0%" data-w="85%"></div></div></div>
-</div>
-<div class="reveal bg-white rounded-3xl shadow-card border-t-4 border-tealx overflow-hidden group hover:-translate-y-2 transition duration-500" style="transition-delay:.2s">
-<div class="bg-gradient-to-br from-teal-700 to-teal-500 p-6 text-white relative overflow-hidden">
-<i class="fa-solid fa-heart absolute -left-4 -bottom-4 text-[90px] opacity-15 group-hover:scale-110 transition"></i>
-<div class="w-14 h-14 rounded-2xl bg-white flex items-center justify-center text-teal-700 text-2xl mb-4 shadow-lg"><i class="fa-solid fa-hand-holding-heart"></i></div>
-<h3 class="font-black text-xl">الأهداف السلوكية <span class="text-white/80 text-sm font-bold">(Savoir-être)</span></h3>
-<p class="text-white/80 text-sm">بناء المواقف والقيم المواطنية…</p>
-</div>
-<ul class="p-6 space-y-3 text-[14px] font-medium text-slate-700">
-<li class="flex gap-3 bg-teal-50 border border-teal-100 rounded-xl p-3"><span class="w-7 h-7 shrink-0 rounded-full bg-teal-600 text-white font-black flex items-center justify-center text-sm">1</span> الوعي بأن الاندماج في العولمة فرصة ومخاطرة تتطلب تأهيلاً وطنياً.</li>
-<li class="flex gap-3 bg-teal-50 border border-teal-100 rounded-xl p-3"><span class="w-7 h-7 shrink-0 rounded-full bg-teal-600 text-white font-black flex items-center justify-center text-sm">2</span> تبنّي موقف نقدي من اللاتكافؤ: تدهور شروط التبادل وتهميش إفريقيا.</li>
-<li class="flex gap-3 bg-teal-50 border border-teal-100 rounded-xl p-3"><span class="w-7 h-7 shrink-0 rounded-full bg-teal-600 text-white font-black flex items-center justify-center text-sm">3</span> تقدير دور تونس كحلقة متوسطية: التصدير، السياحة، والخدمات الرقمية.</li>
-<li class="flex gap-3 bg-teal-50 border border-teal-100 rounded-xl p-3"><span class="w-7 h-7 shrink-0 rounded-full bg-teal-600 text-white font-black flex items-center justify-center text-sm">4</span> احترام العمل الجماعي في تحليل الوثائق الجغرافية ومناقشتها.</li>
-</ul>
-<div class="px-6 pb-6"><div class="text-xs font-black text-teal-700 mb-2">مؤشر الإنجاز المستهدف 95%</div><div class="h-2 bg-slate-100 rounded-full"><div class="obj-bar h-full bg-gradient-to-l from-teal-500 to-teal-700 rounded-full transition-all duration-1000" style="width:0%" data-w="95%"></div></div></div>
-</div>
-</div>
+  <div class="text-center mb-10 reveal">
+    <div class="ornament text-gold font-black text-sm mb-3">✦ المحطة الأولى ✦</div>
+    <h2 class="text-3xl md:text-4xl font-black section-title">تحديد الأهداف: المعرفية والمهارية والسلوكية</h2>
+    <p class="text-slate-600 mt-6 max-w-3xl mx-auto">وفق منهاج الجغرافيا للسنة الرابعة آداب — وزارة التربية التونسية. اضغط على أي بطاقة لتفصيل مؤشرات النجاح.</p>
+  </div>
+  <div class="grid md:grid-cols-3 gap-6">
+    <div class="reveal bg-white rounded-3xl shadow-card border-t-4 border-navy-800 overflow-hidden group hover:-translate-y-2 transition duration-500">
+      <div class="bg-gradient-to-br from-navy-800 to-navy-600 p-6 text-white relative overflow-hidden">
+        <i class="fa-solid fa-brain absolute -left-4 -bottom-4 text-[90px] opacity-10 group-hover:scale-110 transition"></i>
+        <div class="w-14 h-14 rounded-2xl bg-gold flex items-center justify-center text-navy-900 text-2xl mb-4 shadow-lg"><i class="fa-solid fa-lightbulb"></i></div>
+        <h3 class="font-black text-xl">الأهداف المعرفية <span class="text-gold-light text-sm font-bold">(Savoirs)</span></h3>
+        <p class="text-white/70 text-sm">أن يكون المتعلم قادراً في نهاية الدرس على…</p>
+      </div>
+      <ul class="p-6 space-y-3 text-[14px] font-medium text-slate-700">
+        <li class="flex gap-3 bg-sand/70 rounded-xl p-3"><span class="w-7 h-7 shrink-0 rounded-full bg-navy-800 text-gold font-black flex items-center justify-center text-sm">1</span> التعرّف على أصناف الأدفاق التجارية العالمية (مصنّعة، فلاحية، طاقية، خدمات) ونِسَبها.</li>
+        <li class="flex gap-3 bg-sand/70 rounded-xl p-3"><span class="w-7 h-7 shrink-0 rounded-full bg-navy-800 text-gold font-black flex items-center justify-center text-sm">2</span> تفسير بنية التجارة العالمية: هيمنة المصنوعات والطفرة الرقمية للخدمات.</li>
+        <li class="flex gap-3 bg-sand/70 rounded-xl p-3"><span class="w-7 h-7 shrink-0 rounded-full bg-navy-800 text-gold font-black flex items-center justify-center text-sm">3</span> تحديد الأطراف المتدخلة وتصنيفها (رئيسية / ثانوية / مهمّشة) وحصصها.</li>
+        <li class="flex gap-3 bg-sand/70 rounded-xl p-3"><span class="w-7 h-7 shrink-0 rounded-full bg-navy-800 text-gold font-black flex items-center justify-center text-sm">4</span> استنتاج عوامل تنامي الأدفاق: التحرير الجمركي، الحاويات، الشركات متعددة الجنسيات.</li>
+      </ul>
+      <div class="px-6 pb-6"><div class="text-xs font-black text-navy-800 mb-2">مؤشر الإنجاز المستهدف 90%</div><div class="h-2 bg-slate-100 rounded-full"><div class="obj-bar h-full gold-grad rounded-full transition-all duration-1000" style="width:0%" data-w="90%"></div></div></div>
+    </div>
+    <div class="reveal bg-white rounded-3xl shadow-card border-t-4 border-gold overflow-hidden group hover:-translate-y-2 transition duration-500" style="transition-delay:.1s">
+      <div class="bg-gradient-to-br from-[#8a6f14] to-[#c9a227] p-6 text-white relative overflow-hidden">
+        <i class="fa-solid fa-compass-drafting absolute -left-4 -bottom-4 text-[90px] opacity-15 group-hover:rotate-12 transition"></i>
+        <div class="w-14 h-14 rounded-2xl bg-white flex items-center justify-center text-gold-dark text-2xl mb-4 shadow-lg"><i class="fa-solid fa-screwdriver-wrench"></i></div>
+        <h3 class="font-black text-xl">الأهداف المهارية <span class="text-white/80 text-sm font-bold">(Savoir-faire)</span></h3>
+        <p class="text-white/80 text-sm">توظيف الأدوات الجغرافية والمنهجية…</p>
+      </div>
+      <ul class="p-6 space-y-3 text-[14px] font-medium text-slate-700">
+        <li class="flex gap-3 bg-amber-50 border border-amber-100 rounded-xl p-3"><span class="w-7 h-7 shrink-0 rounded-full gold-grad text-navy-900 font-black flex items-center justify-center text-sm">1</span> قراءة خريطة أدفاق التجارة العالمية وتحديد المحاور الكبرى (شمال-شمال…).</li>
+        <li class="flex gap-3 bg-amber-50 border border-amber-100 rounded-xl p-3"><span class="w-7 h-7 shrink-0 rounded-full gold-grad text-navy-900 font-black flex items-center justify-center text-sm">2</span> تحليل مبيان نموّ التجارة (1980 ← 2026) واستخلاص الاتجاه العام.</li>
+        <li class="flex gap-3 bg-amber-50 border border-amber-100 rounded-xl p-3"><span class="w-7 h-7 shrink-0 rounded-full gold-grad text-navy-900 font-black flex items-center justify-center text-sm">3</span> إنجاز وقراءة جدول القطاعات: القيمة، الحجم، ونسبة المساهمة.</li>
+        <li class="flex gap-3 bg-amber-50 border border-amber-100 rounded-xl p-3"><span class="w-7 h-7 shrink-0 rounded-full gold-grad text-navy-900 font-black flex items-center justify-center text-sm">4</span> تحرير فقرة منهجية مفسِّرة للتفاوت بين الأطراف بأسلوب جغرافي سليم.</li>
+      </ul>
+      <div class="px-6 pb-6"><div class="text-xs font-black text-gold-dark mb-2">مؤشر الإنجاز المستهدف 85%</div><div class="h-2 bg-slate-100 rounded-full"><div class="obj-bar h-full gold-grad rounded-full transition-all duration-1000" style="width:0%" data-w="85%"></div></div></div>
+    </div>
+    <div class="reveal bg-white rounded-3xl shadow-card border-t-4 border-tealx overflow-hidden group hover:-translate-y-2 transition duration-500" style="transition-delay:.2s">
+      <div class="bg-gradient-to-br from-teal-700 to-teal-500 p-6 text-white relative overflow-hidden">
+        <i class="fa-solid fa-heart absolute -left-4 -bottom-4 text-[90px] opacity-15 group-hover:scale-110 transition"></i>
+        <div class="w-14 h-14 rounded-2xl bg-white flex items-center justify-center text-teal-700 text-2xl mb-4 shadow-lg"><i class="fa-solid fa-hand-holding-heart"></i></div>
+        <h3 class="font-black text-xl">الأهداف السلوكية <span class="text-white/80 text-sm font-bold">(Savoir-être)</span></h3>
+        <p class="text-white/80 text-sm">بناء المواقف والقيم المواطنية…</p>
+      </div>
+      <ul class="p-6 space-y-3 text-[14px] font-medium text-slate-700">
+        <li class="flex gap-3 bg-teal-50 border border-teal-100 rounded-xl p-3"><span class="w-7 h-7 shrink-0 rounded-full bg-teal-600 text-white font-black flex items-center justify-center text-sm">1</span> الوعي بأن الاندماج في العولمة فرصة ومخاطرة تتطلب تأهيلاً وطنياً.</li>
+        <li class="flex gap-3 bg-teal-50 border border-teal-100 rounded-xl p-3"><span class="w-7 h-7 shrink-0 rounded-full bg-teal-600 text-white font-black flex items-center justify-center text-sm">2</span> تبنّي موقف نقدي من اللاتكافؤ: تدهور شروط التبادل وتهميش إفريقيا.</li>
+        <li class="flex gap-3 bg-teal-50 border border-teal-100 rounded-xl p-3"><span class="w-7 h-7 shrink-0 rounded-full bg-teal-600 text-white font-black flex items-center justify-center text-sm">3</span> تقدير دور تونس كحلقة متوسطية: التصدير، السياحة، والخدمات الرقمية.</li>
+        <li class="flex gap-3 bg-teal-50 border border-teal-100 rounded-xl p-3"><span class="w-7 h-7 shrink-0 rounded-full bg-teal-600 text-white font-black flex items-center justify-center text-sm">4</span> احترام العمل الجماعي في تحليل الوثائق الجغرافية ومناقشتها.</li>
+      </ul>
+      <div class="px-6 pb-6"><div class="text-xs font-black text-teal-700 mb-2">مؤشر الإنجاز المستهدف 95%</div><div class="h-2 bg-slate-100 rounded-full"><div class="obj-bar h-full bg-gradient-to-l from-teal-500 to-teal-700 rounded-full transition-all duration-1000" style="width:0%" data-w="95%"></div></div></div>
+    </div>
+  </div>
 </section>
 
 <!-- CONCEPTS -->
 <section id="concepts" class="py-14 scroll-mt-24">
-<div class="bg-navy-800 rounded-[32px] p-6 md:p-12 relative overflow-hidden shadow-luxe reveal">
-<div class="absolute inset-0 grid-bg opacity-50"></div>
-<div class="absolute -top-20 -left-20 w-72 h-72 bg-gold/20 blur-[100px] rounded-full"></div>
-<div class="relative">
-<div class="text-center mb-8">
-<div class="ornament text-gold font-black text-sm mb-3">✦ المحطة الثانية ✦</div>
-<h2 class="text-3xl md:text-4xl font-black text-white">شرح المفاهيم <span class="text-gold-grad">الأساسية</span></h2>
-<p class="text-white/60 mt-4">مرّر الفأرة على البطاقة (أو المسها) لقلبها وكشف التعريف + مثال تطبيقي • استعمل البحث للوصول السريع</p>
-<div class="max-w-md mx-auto mt-6 relative no-print">
-<input id="conceptSearch" type="text" placeholder="ابحث عن مفهوم… (مثال: العولمة، الحاويات…)" class="w-full rounded-2xl bg-white/10 border border-white/20 text-white placeholder-white/40 px-5 py-3 pr-12 outline-none focus:border-gold focus:bg-white/15 transition">
-<i class="fa-solid fa-magnifying-glass absolute right-4 top-1/2 -translate-y-1/2 text-gold"></i>
-</div>
-</div>
-<div id="conceptsGrid" class="grid sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-5"></div>
-<div class="mt-8 glass rounded-2xl p-5 flex flex-col md:flex-row items-center gap-4">
-<div class="w-12 h-12 shrink-0 rounded-xl gold-grad flex items-center justify-center text-navy-900 text-xl"><i class="fa-solid fa-pen-nib"></i></div>
-<p class="text-white/80 text-sm leading-relaxed"><strong class="text-gold-light">
-</div>
-</div>
-</div>
+  <div class="bg-navy-800 rounded-[32px] p-6 md:p-12 relative overflow-hidden shadow-luxe reveal">
+    <div class="absolute inset-0 grid-bg opacity-50"></div>
+    <div class="absolute -top-20 -left-20 w-72 h-72 bg-gold/20 blur-[100px] rounded-full"></div>
+    <div class="relative">
+      <div class="text-center mb-8">
+        <div class="ornament text-gold font-black text-sm mb-3">✦ المحطة الثانية ✦</div>
+        <h2 class="text-3xl md:text-4xl font-black text-white">شرح المفاهيم <span class="text-gold-grad">الأساسية</span></h2>
+        <p class="text-white/60 mt-4">مرّر الفأرة على البطاقة (أو المسها) لقلبها وكشف التعريف + مثال تطبيقي • استعمل البحث للوصول السريع</p>
+        <div class="max-w-md mx-auto mt-6 relative no-print">
+          <input id="conceptSearch" type="text" placeholder="ابحث عن مفهوم… (مثال: العولمة، الحاويات…)" class="w-full rounded-2xl bg-white/10 border border-white/20 text-white placeholder-white/40 px-5 py-3 pr-12 outline-none focus:border-gold focus:bg-white/15 transition">
+          <i class="fa-solid fa-magnifying-glass absolute right-4 top-1/2 -translate-y-1/2 text-gold"></i>
+        </div>
+      </div>
+      <div id="conceptsGrid" class="grid sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-5"></div>
+      <div class="mt-8 glass rounded-2xl p-5 flex flex-col md:flex-row items-center gap-4">
+        <div class="w-12 h-12 shrink-0 rounded-xl gold-grad flex items-center justify-center text-navy-900 text-xl"><i class="fa-solid fa-pen-nib"></i></div>
+        <p class="text-white/80 text-sm leading-relaxed"><strong class="text-gold-light">نصيحة منهجية للأستاذ رياض سليمي:</strong> في اختبار البكالوريا آداب، يُقيَّم توظيفك الدقيق للمفاهيم (الثالوث، تدهور شروط التبادل، التعهيد…) أكثر من الحفظ. وظّف مفهوماً واحداً على الأقل في كل فقرة تحليلية مع مثال عددي (70%، 32 تريليون $، 2%).</p>
+      </div>
+    </div>
+  </div>
 </section>
 
 <!-- INTRO -->
 <section id="intro" class="py-16 scroll-mt-24">
-<div class="grid lg:grid-cols-5 gap-8">
-<div class="lg:col-span-3 reveal-right bg-white rounded-[28px] shadow-card p-8 md:p-10 border border-navy-800/10 relative overflow-hidden">
-<div class="absolute top-0 right-0 w-2 h-full gold-grad"></div>
-<div class="chip bg-navy-800 text-gold-light mb-4 inline-block">المحطة الثالثة • التمهيد</div>
-<h2 class="text-3xl font-black mb-6">المقدّمة <span class="text-gold-dark">العامة</span></h2>
-<div class="font-amiri text-[19px] leading-[2.1] text-slate-700 space-y-4">
-<p><span class="text-4xl font-black text-gold-dark float-right ml-3 leading-none">ش</span>هد العالم منذ ثمانينات القرن العشرين انفجاراً غير مسبوق في المبادلات التجارية، إذ تضاعفت قيمتها عشرات المرّات لتتجاوز اليوم <strong class="text-navy-800 bg-amber-100 px-1 rounded">32 تريليون دولار سنوياً</strong>، مدفوعة بتحرير التجارة، وثورة الحاويات والرقمنة، وهيمنة الشركات متعددة الجنسيات.</p>
-<p>ولم تعد التجارة مجرّد نقلٍ للبضائع عبر السفن، بل أصبحت <strong class="text-navy-800">منظومة عولمية معقّدة</strong> تُصمَّم فيها المنتجات في الشمال، وتُجمَّع في آسيا الصاعدة، وتُستهلك عالمياً، بينما تنمو تجارة الخدمات غير المادية (السياحة، المالية، البرمجيات) بوتيرة صاروخية.</p>
-<p>غير أنّ هذه الأدفاق تكشف <strong class="text-red-700">تفاوتاً صارخاً</strong>: تركّزٌ هائل بين أقطاب الثالوث (أمريكا الشمالية، أوروبا، شرق آسيا) مع صعود الصين والآسيان، مقابل تهميش شبه كامل لإفريقيا جنوب الصحراء التي لا تتجاوز حصتها 2%.</p>
-</div>
-<div class="mt-8 grid sm:grid-cols-3 gap-3 text-center">
-<div class="rounded-2xl bg-navy-800 text-white p-4"><div class="font-black text-gold text-2xl">×16</div><div class="text-xs opacity-70">تضاعف التجارة منذ 1980</div></div>
-<div class="rounded-2xl gold-grad text-navy-900 p-4"><div class="font-black text-2xl">24.5T </div><div class="text-xs opacity-80">تجارة الخدمات</div></div>
-</div>
-</div>
-<div class="lg:col-span-2 reveal-left">
-<div class="bg-gradient-to-b from-red-700 to-red-900 rounded-[28px] p-8 text-white shadow-luxe relative overflow-hidden h-full">
-<div class="absolute -bottom-10 -left-10 text-[140px] opacity-10"><i class="fa-solid fa-circle-question"></i></div>
-<div class="chip bg-white/20 border border-white/30 mb-4 inline-block">الإشكالية المحورية</div>
-<h2 class="text-2xl font-black mb-6 leading-snug">أيّ بنية وأيّ فاعلين<br>لأدفاق التجارة العالمية؟</h2>
-<div class="space-y-4 relative">
-<button class="prob-btn w-full text-right bg-white/10 hover:bg-white/20 border border-white/20 rounded-2xl p-4 transition group" data-a="تتشكل من 4 أصناف: المصنوعات (+70%)، الفلاحية (10-12%)، الطاقة والمعادن، والخدمات (+7T$`)، وتتركز مجالياً على محور شمال-شمال بأكثر من 50% من المبادلات.">
-<div class="font-black flex items-start gap-3"><span class="w-8 h-8 shrink-0 rounded-full bg-gold text-navy-900 flex items-center justify-center font-black">1</span> ما أصناف الأدفاق التجارية العالمية وما خصائص بنيتها النوعية والمجالية؟</div>
-<div class="prob-ans hidden mt-3 text-[13px] bg-navy-900/60 rounded-xl p-3 border border-gold/30 leading-relaxed"></div>
-</button>
-<button class="prob-btn w-full text-right bg-white/10 hover:bg-white/20 border border-white/20 rounded-2xl p-4 transition" data-a="يفسَّر التنامي بثلاثة عوامل: التحرير الجمركي والمؤسساتي (OMC والاتفاقيات)، الثورة اللوجستية والرقمية (الحاويات والإنترنت)، وتقسيم العمل الدولي الذي تقوده الشركات متعددة الجنسيات.">
-<div class="font-black flex items-start gap-3"><span class="w-8 h-8 shrink-0 rounded-full bg-gold text-navy-900 flex items-center justify-center font-black">2</span> ما العوامل المفسِّرة للتنامي القياسي لهذه الأدفاق؟</div>
-<div class="prob-ans hidden mt-3 text-[13px] bg-navy-900/60 rounded-xl p-3 border border-gold/30 leading-relaxed"></div>
-</button>
-<button class="prob-btn w-full text-right bg-white/10 hover:bg-white/20 border border-white/20 rounded-2xl p-4 transition" data-a="ثلاث فئات: أطراف رئيسية مهيمنة (+60%: EU، USA، الصين)، أطراف ثانوية صاعدة (الهند، البرازيل، الأوبك ~ نصف تجارة السلع)، وأطراف مهمّشة (إفريقيا جنوب الصحراء 2-3%) تعاني تدهور شروط التبادل.">
-<div class="font-black flex items-start gap-3"><span class="w-8 h-8 shrink-0 rounded-full bg-gold text-navy-900 flex items-center justify-center font-black">3</span> من هي الأطراف المتدخلة وما مدى التفاوت والتبعية بينها؟</div>
-<div class="prob-ans hidden mt-3 text-[13px] bg-navy-900/60 rounded-xl p-3 border border-gold/30 leading-relaxed"></div>
-</button>
-</div>
-<p class="text-white/50 text-[11px] mt-5 text-center no-print">— اضغط على أي سؤال لكشف عناصر الإجابة —</p>
-</div>
-</div>
-</div>
+  <div class="grid lg:grid-cols-5 gap-8">
+    <div class="lg:col-span-3 reveal-right bg-white rounded-[28px] shadow-card p-8 md:p-10 border border-navy-800/10 relative overflow-hidden">
+      <div class="absolute top-0 right-0 w-2 h-full gold-grad"></div>
+      <div class="chip bg-navy-800 text-gold-light mb-4 inline-block">المحطة الثالثة • التمهيد</div>
+      <h2 class="text-3xl font-black mb-6">المقدّمة <span class="text-gold-dark">العامة</span></h2>
+      <div class="font-amiri text-[19px] leading-[2.1] text-slate-700 space-y-4">
+        <p><span class="text-4xl font-black text-gold-dark float-right ml-3 leading-none">ش</span>هد العالم منذ ثمانينات القرن العشرين انفجاراً غير مسبوق في المبادلات التجارية، إذ تضاعفت قيمتها عشرات المرّات لتتجاوز اليوم <strong class="text-navy-800 bg-amber-100 px-1 rounded">32 تريليون دولار سنوياً</strong>، مدفوعة بتحرير التجارة، وثورة الحاويات والرقمنة، وهيمنة الشركات متعددة الجنسيات.</p>
+        <p>ولم تعد التجارة مجرّد نقلٍ للبضائع عبر السفن، بل أصبحت <strong class="text-navy-800">منظومة عولمية معقّدة</strong> تُصمَّم فيها المنتجات في الشمال، وتُجمَّع في آسيا الصاعدة، وتُستهلك عالمياً، بينما تنمو تجارة الخدمات غير المادية (السياحة، المالية، البرمجيات) بوتيرة صاروخية.</p>
+        <p>غير أنّ هذه الأدفاق تكشف <strong class="text-red-700">تفاوتاً صارخاً</strong>: تركّزٌ هائل بين أقطاب الثالوث (أمريكا الشمالية، أوروبا، شرق آسيا) مع صعود الصين والآسيان، مقابل تهميش شبه كامل لإفريقيا جنوب الصحراء التي لا تتجاوز حصتها 2%.</p>
+      </div>
+      <div class="mt-8 grid sm:grid-cols-3 gap-3 text-center">
+        <div class="rounded-2xl bg-navy-800 text-white p-4"><div class="font-black text-gold text-2xl">×16</div><div class="text-xs opacity-70">تضاعف التجارة منذ 1980</div></div>
+        <div class="rounded-2xl gold-grad text-navy-900 p-4"><div class="font-black text-2xl">24.5T$</div><div class="text-xs font-bold opacity-70">تجارة السلع وحدها</div></div>
+        <div class="rounded-2xl bg-teal-600 text-white p-4"><div class="font-black text-2xl">7.8T$</div><div class="text-xs opacity-80">تجارة الخدمات</div></div>
+      </div>
+    </div>
+    <div class="lg:col-span-2 reveal-left">
+      <div class="bg-gradient-to-b from-red-700 to-red-900 rounded-[28px] p-8 text-white shadow-luxe relative overflow-hidden h-full">
+        <div class="absolute -bottom-10 -left-10 text-[140px] opacity-10"><i class="fa-solid fa-circle-question"></i></div>
+        <div class="chip bg-white/20 border border-white/30 mb-4 inline-block">الإشكالية المحورية</div>
+        <h2 class="text-2xl font-black mb-6 leading-snug">أيّ بنية وأيّ فاعلين<br>لأدفاق التجارة العالمية؟</h2>
+        <div class="space-y-4 relative">
+          <button class="prob-btn w-full text-right bg-white/10 hover:bg-white/20 border border-white/20 rounded-2xl p-4 transition group" data-a="تتشكل من 4 أصناف: المصنوعات (+70%)، الفلاحية (10-12%)، الطاقة والمعادن، والخدمات (+7T$)، وتتركز مجالياً على محور شمال-شمال بأكثر من 50% من المبادلات.">
+            <div class="font-black flex items-start gap-3"><span class="w-8 h-8 shrink-0 rounded-full bg-gold text-navy-900 flex items-center justify-center font-black">1</span> ما أصناف الأدفاق التجارية العالمية وما خصائص بنيتها النوعية والمجالية؟</div>
+            <div class="prob-ans hidden mt-3 text-[13px] bg-navy-900/60 rounded-xl p-3 border border-gold/30 leading-relaxed"></div>
+          </button>
+          <button class="prob-btn w-full text-right bg-white/10 hover:bg-white/20 border border-white/20 rounded-2xl p-4 transition" data-a="يفسَّر التنامي بثلاثة عوامل: التحرير الجمركي والمؤسساتي (OMC والاتفاقيات)، الثورة اللوجستية والرقمية (الحاويات والإنترنت)، وتقسيم العمل الدولي الذي تقوده الشركات متعددة الجنسيات.">
+            <div class="font-black flex items-start gap-3"><span class="w-8 h-8 shrink-0 rounded-full bg-gold text-navy-900 flex items-center justify-center font-black">2</span> ما العوامل المفسِّرة للتنامي القياسي لهذه الأدفاق؟</div>
+            <div class="prob-ans hidden mt-3 text-[13px] bg-navy-900/60 rounded-xl p-3 border border-gold/30 leading-relaxed"></div>
+          </button>
+          <button class="prob-btn w-full text-right bg-white/10 hover:bg-white/20 border border-white/20 rounded-2xl p-4 transition" data-a="ثلاث فئات: أطراف رئيسية مهيمنة (+60%: EU، USA، الصين)، أطراف ثانوية صاعدة (الهند، البرازيل، الأوبك ~ نصف تجارة السلع)، وأطراف مهمّشة (إفريقيا جنوب الصحراء 2-3%) تعاني تدهور شروط التبادل.">
+            <div class="font-black flex items-start gap-3"><span class="w-8 h-8 shrink-0 rounded-full bg-gold text-navy-900 flex items-center justify-center font-black">3</span> من هي الأطراف المتدخلة وما مدى التفاوت والتبعية بينها؟</div>
+            <div class="prob-ans hidden mt-3 text-[13px] bg-navy-900/60 rounded-xl p-3 border border-gold/30 leading-relaxed"></div>
+          </button>
+        </div>
+        <p class="text-white/50 text-[11px] mt-5 text-center no-print">— اضغط على أي سؤال لكشف عناصر الإجابة —</p>
+      </div>
+    </div>
+  </div>
 </section>
 
 <!-- ELEMENT 1 HEADER -->
 <section id="element1" class="scroll-mt-20">
-<div class="reveal relative rounded-[32px] overflow-hidden shadow-luxe">
-<img src="https://images.unsplash.com/photo-1578575437130-527eed3abbec?q=80&w=2000&auto=format&fit=crop" class="absolute inset-0 w-full h-full object-cover" alt="port">
-<div class="absolute inset-0 bg-gradient-to-l from-navy-900 via-navy-800/92 to-navy-800/60"></div>
-<div class="relative p-8 md:p-14 flex flex-col md:flex-row items-start md:items-center gap-6">
-<div class="w-20 h-20 shrink-0 rounded-3xl gold-grad flex items-center justify-center text-navy-900 text-4xl shadow-luxe rotate-3"><i class="fa-solid fa-boxes-stacked"></i></div>
-<div>
-<div class="text-gold-light font-black text-sm mb-2 tracking-wide">— العنصر الأول —</div>
-<h2 class="text-3xl md:text-5xl font-black text-white leading-tight">أدفاق التجارة العالمية <span class="text-gold-grad">وبنيتها</span></h2>
-<p class="text-white/70 mt-3 max-w-2xl">الأصناف الأربعة • الحجم والقيمة • الاتجاهات الجغرافية • الهيكل النوعي: من هيمنة المصنوعات إلى الطفرة الرقمية.</p>
-</div>
-<div class="md:mr-auto flex gap-2 no-print">
-<a href="#types" class="bg-white/10 border border-white/20 text-white text-sm font-bold px-4 py-2 rounded-full hover:bg-gold hover:text-navy-900 transition">الأصناف</a>
-<a href="#mapSection" class="bg-white/10 border border-white/20 text-white text-sm font-bold px-4 py-2 rounded-full hover:bg-gold hover:text-navy-900 transition">الخريطة</a>
-<a href="#sectors" class="bg-white/10 border border-white/20 text-white text-sm font-bold px-4 py-2 rounded-full hover:bg-gold hover:text-navy-900 transition">الجدول</a>
-</div>
-</div>
-</div>
+  <div class="reveal relative rounded-[32px] overflow-hidden shadow-luxe">
+    <img src="https://images.unsplash.com/photo-1578575437130-527eed3abbec?q=80&w=2000&auto=format&fit=crop" class="absolute inset-0 w-full h-full object-cover" alt="port">
+    <div class="absolute inset-0 bg-gradient-to-l from-navy-900 via-navy-800/92 to-navy-800/60"></div>
+    <div class="relative p-8 md:p-14 flex flex-col md:flex-row items-start md:items-center gap-6">
+      <div class="w-20 h-20 shrink-0 rounded-3xl gold-grad flex items-center justify-center text-navy-900 text-4xl shadow-luxe rotate-3"><i class="fa-solid fa-boxes-stacked"></i></div>
+      <div>
+        <div class="text-gold-light font-black text-sm mb-2 tracking-wide">— العنصر الأول —</div>
+        <h2 class="text-3xl md:text-5xl font-black text-white leading-tight">أدفاق التجارة العالمية <span class="text-gold-grad">وبنيتها</span></h2>
+        <p class="text-white/70 mt-3 max-w-2xl">الأصناف الأربعة • الحجم والقيمة • الاتجاهات الجغرافية • الهيكل النوعي: من هيمنة المصنوعات إلى الطفرة الرقمية.</p>
+      </div>
+      <div class="md:mr-auto flex gap-2 no-print">
+        <a href="#types" class="bg-white/10 border border-white/20 text-white text-sm font-bold px-4 py-2 rounded-full hover:bg-gold hover:text-navy-900 transition">الأصناف</a>
+        <a href="#mapSection" class="bg-white/10 border border-white/20 text-white text-sm font-bold px-4 py-2 rounded-full hover:bg-gold hover:text-navy-900 transition">الخريطة</a>
+        <a href="#sectors" class="bg-white/10 border border-white/20 text-white text-sm font-bold px-4 py-2 rounded-full hover:bg-gold hover:text-navy-900 transition">الجدول</a>
+      </div>
+    </div>
+  </div>
 </section>
 
 <!-- TYPES TABS -->
 <section id="types" class="py-12 scroll-mt-24">
-<div class="text-center mb-8 reveal">
-<h3 class="text-2xl md:text-3xl font-black">1️⃣ أصناف الأدفاق التجارية العالمية: <span class="text-gold-dark">الاتجاه والحجم</span></h3>
-<p class="text-slate-500 mt-2">اختر صنفاً لاستكشاف تفاصيله: النسبة، الأمثلة، القوى المتحكمة، والتحديات</p>
-</div>
-<div class="flex flex-wrap justify-center gap-3 mb-8 reveal no-print">
-<button class="tab-btn active border-2 border-slate-200 bg-white rounded-2xl px-5 py-3 font-black text-sm flex items-center gap-2" data-tab="t1"><span class="w-9 h-9 rounded-xl bg-navy-800 text-gold flex items-center justify-center"><i class="fa-solid fa-microchip"></i></span> السلع المصنّعة 70%</button>
-<button class="tab-btn border-2 border-slate-200 bg-white rounded-2xl px-5 py-3 font-black text-sm flex items-center gap-2" data-tab="t2"><span class="w-9 h-9 rounded-xl bg-green-600 text-white flex items-center justify-center"><i class="fa-solid fa-wheat-awn"></i></span> الفلاحية والغذائية 11%</button>
-<button class="tab-btn border-2 border-slate-200 bg-white rounded-2xl px-5 py-3 font-black text-sm flex items-center gap-2" data-tab="t3"><span class="w-9 h-9 rounded-xl bg-red-600 text-white flex items-center justify-center"><i class="fa-solid fa-oil-well"></i></span> الطاقة والمعادن</button>
-<button class="tab-btn border-2 border-slate-200 bg-white rounded-2xl px-5 py-3 font-black text-sm flex items-center gap-2" data-tab="t4"><span class="w-9 h-9 rounded-xl bg-teal-600 text-white flex items-center justify-center"><i class="fa-solid fa-cloud"></i></span> تجارة الخدمات 7T`$+</button>
+  <div class="text-center mb-8 reveal">
+    <h3 class="text-2xl md:text-3xl font-black">1️⃣ أصناف الأدفاق التجارية العالمية: <span class="text-gold-dark">الاتجاه والحجم</span></h3>
+    <p class="text-slate-500 mt-2">اختر صنفاً لاستكشاف تفاصيله: النسبة، الأمثلة، القوى المتحكمة، والتحديات</p>
+  </div>
+  <div class="flex flex-wrap justify-center gap-3 mb-8 reveal no-print">
+    <button class="tab-btn active border-2 border-slate-200 bg-white rounded-2xl px-5 py-3 font-black text-sm flex items-center gap-2" data-tab="t1"><span class="w-9 h-9 rounded-xl bg-navy-800 text-gold flex items-center justify-center"><i class="fa-solid fa-microchip"></i></span> السلع المصنّعة 70%</button>
+    <button class="tab-btn border-2 border-slate-200 bg-white rounded-2xl px-5 py-3 font-black text-sm flex items-center gap-2" data-tab="t2"><span class="w-9 h-9 rounded-xl bg-green-600 text-white flex items-center justify-center"><i class="fa-solid fa-wheat-awn"></i></span> الفلاحية والغذائية 11%</button>
+    <button class="tab-btn border-2 border-slate-200 bg-white rounded-2xl px-5 py-3 font-black text-sm flex items-center gap-2" data-tab="t3"><span class="w-9 h-9 rounded-xl bg-red-600 text-white flex items-center justify-center"><i class="fa-solid fa-oil-well"></i></span> الطاقة والمعادن</button>
+    <button class="tab-btn border-2 border-slate-200 bg-white rounded-2xl px-5 py-3 font-black text-sm flex items-center gap-2" data-tab="t4"><span class="w-9 h-9 rounded-xl bg-teal-600 text-white flex items-center justify-center"><i class="fa-solid fa-cloud"></i></span> تجارة الخدمات 7T$+</button>
+  </div>
+
+  <div class="reveal bg-white rounded-[28px] shadow-card border overflow-hidden">
+    <!-- T1 -->
+    <div id="t1" class="tab-panel grid lg:grid-cols-2">
+      <div class="p-8 md:p-10">
+        <div class="flex items-center gap-3 mb-4"><span class="chip bg-navy-800 text-gold-light">العمود الفقري للمبادلات</span><span class="chip bg-amber-100 text-amber-800">+70% من تجارة السلع</span></div>
+        <h4 class="text-2xl font-black mb-4">السلع المصنّعة: قلب التجارة العالمية</h4>
+        <p class="text-slate-600 leading-relaxed mb-5">تشكّل العمود الفقري للمبادلات الدولية بنسبة تتجاوز <strong>70%</strong> من إجمالي تجارة السلع. تشمل المعدات الآلية، وسائل النقل (طائرات، سيارات)، المواد الكيميائية، والمنتجات الإلكترونية الدقيقة عالية القيمة المضافة.</p>
+        <div class="grid grid-cols-2 gap-3 mb-5">
+          <div class="bg-sand rounded-2xl p-4 text-center"><i class="fa-solid fa-plane text-navy-800 text-2xl mb-2"></i><div class="font-black text-sm">طائرات وسيارات</div><div class="text-xs text-slate-500">إيرباص • تسلا • تويوتا</div></div>
+          <div class="bg-sand rounded-2xl p-4 text-center"><i class="fa-solid fa-laptop-code text-navy-800 text-2xl mb-2"></i><div class="font-black text-sm">إلكترونيات دقيقة</div><div class="text-xs text-slate-500">آبل • سامسونغ</div></div>
+          <div class="bg-sand rounded-2xl p-4 text-center"><i class="fa-solid fa-flask text-navy-800 text-2xl mb-2"></i><div class="font-black text-sm">كيمياء وصيدلة</div><div class="text-xs text-slate-500">باير • سانوفي</div></div>
+          <div class="bg-sand rounded-2xl p-4 text-center"><i class="fa-solid fa-gears text-navy-800 text-2xl mb-2"></i><div class="font-black text-sm">معدات آلية</div><div class="text-xs text-slate-500">سيمنس • كاتربيلر</div></div>
+        </div>
+        <div class="bg-navy-800 text-white rounded-2xl p-4 text-sm leading-relaxed"><i class="fa-solid fa-circle-info text-gold ml-2"></i><strong class="text-gold-light">منطق الإنتاج:</strong> تُصمَّم في الدول المتقدمة ← تُجمَّع في الصين وفيتنام ← تُصدَّر نحو الأسواق الاستهلاكية الكبرى (تقسيم العمل الدولي).</div>
+      </div>
+      <div class="relative min-h-[320px]">
+        <img src="https://images.unsplash.com/photo-1565043666747-69f6646db940?q=80&w=1200&auto=format&fit=crop" class="absolute inset-0 w-full h-full object-cover" alt="factory">
+        <div class="absolute inset-0 bg-gradient-to-t from-navy-900/85 to-transparent"></div>
+        <div class="absolute bottom-6 right-6 left-6">
+          <div class="text-white font-black mb-2 flex justify-between text-sm"><span>حصة المصنوعات من تجارة السلع</span><span class="text-gold-light">70%</span></div>
+          <div class="h-3 bg-white/20 rounded-full overflow-hidden"><div class="h-full gold-grad rounded-full" style="width:70%"></div></div>
+          <div class="grid grid-cols-3 gap-2 mt-4 text-center text-white text-xs font-bold">
+            <div class="glass rounded-xl p-2">ميكانيكية<br><span class="text-gold-light">28%</span></div>
+            <div class="glass rounded-xl p-2">إلكترونية<br><span class="text-gold-light">24%</span></div>
+            <div class="glass rounded-xl p-2">كيميائية<br><span class="text-gold-light">18%</span></div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- T2 -->
+    <div id="t2" class="tab-panel hidden grid lg:grid-cols-2">
+      <div class="p-8 md:p-10">
+        <div class="flex items-center gap-3 mb-4"><span class="chip bg-green-700 text-white">الأمن الغذائي العالمي</span><span class="chip bg-green-100 text-green-800">10% ← 12%</span></div>
+        <h4 class="text-2xl font-black mb-4">المنتجات الفلاحية والمواد الغذائية</h4>
+        <p class="text-slate-600 leading-relaxed mb-5">تمثل حوالي <strong>10% إلى 12%</strong> من التجارة العالمية. تتحكم فيها قوى زراعية كبرى قادرة على تحقيق فائض تصديري ضخم: <strong>الولايات المتحدة، الاتحاد الأوروبي، البرازيل، والأرجنتين</strong>، في حين تعاني دول عديدة (خاصة إفريقية) من <strong class="text-red-700">التبعية الغذائية</strong>.</p>
+        <ul class="space-y-2.5 text-sm font-medium text-slate-700">
+          <li class="flex items-center gap-3 bg-green-50 border border-green-100 rounded-xl p-3"><i class="fa-solid fa-flag-usa text-red-500 text-lg"></i> <strong>الولايات المتحدة:</strong> القمح، الذرة، الصويا — أول مصدّر فلاحي عالمي</li>
+          <li class="flex items-center gap-3 bg-green-50 border border-green-100 rounded-xl p-3"><i class="fa-solid fa-cow text-amber-700 text-lg"></i> <strong>البرازيل والأرجنتين:</strong> اللحوم، السكر، القهوة، الصويا</li>
+          <li class="flex items-center gap-3 bg-red-50 border border-red-100 rounded-xl p-3"><i class="fa-solid fa-triangle-exclamation text-red-500 text-lg"></i> <strong>الجنوب:</strong> يستورد الغذاء المصنّع بأسعار مرتفعة ← عجز وتبعية</li>
+        </ul>
+      </div>
+      <div class="relative min-h-[320px]">
+        <img src="https://images.unsplash.com/photo-1500382017468-9049fed747ef?q=80&w=1200&auto=format&fit=crop" class="absolute inset-0 w-full h-full object-cover" alt="wheat">
+        <div class="absolute inset-0 bg-gradient-to-t from-green-950/90 to-transparent"></div>
+        <div class="absolute bottom-6 right-6 left-6 glass rounded-2xl p-5 text-white">
+          <h5 class="font-black mb-3 text-green-300"><i class="fa-solid fa-scale-unbalanced ml-2"></i> مفارقة الغذاء العالمي</h5>
+          <div class="flex items-center gap-3 text-sm"><div class="flex-1"><div class="flex justify-between mb-1"><span>فائض الشمال</span><span>85%</span></div><div class="h-2.5 bg-white/20 rounded-full"><div class="h-full bg-green-400 rounded-full" style="width:85%"></div></div></div></div>
+          <div class="flex items-center gap-3 text-sm mt-3"><div class="flex-1"><div class="flex justify-between mb-1"><span>اكتفاء إفريقيا جنوب الصحراء</span><span class="text-red-300">عجز مزمن</span></div><div class="h-2.5 bg-white/20 rounded-full"><div class="h-full bg-red-400 rounded-full" style="width:22%"></div></div></div></div>
+        </div>
+      </div>
+    </div>
+    <!-- T3 -->
+    <div id="t3" class="tab-panel hidden grid lg:grid-cols-2">
+      <div class="p-8 md:p-10">
+        <div class="flex items-center gap-3 mb-4"><span class="chip bg-red-700 text-white">شرايين الاقتصاد العالمي</span><span class="chip bg-red-100 text-red-800">تقلبات جيوسياسية حادة</span></div>
+        <h4 class="text-2xl font-black mb-4">مصادر الطاقة والمواد المعدنية</h4>
+        <p class="text-slate-600 leading-relaxed mb-5">تشمل <strong>النفط الخام، الغاز الطبيعي، والفحم</strong>، إلى جانب المعادن الأساسية (الحديد والنحاس) والمواد الاستراتيجية (الليثيوم، الكوبالت). تخضع لتقلبات حادة ترتبط بالجيوسياسة العالمية وأسعار الأسواق الدولية (برميل النفط).</p>
+        <div class="grid grid-cols-3 gap-3 mb-5 text-center">
+          <div class="rounded-2xl bg-slate-900 text-white p-4"><i class="fa-solid fa-oil-can text-amber-400 text-2xl"></i><div class="font-black text-sm mt-2">النفط</div><div class="text-[11px] text-white/60">الشرق الأوسط • روسيا</div></div>
+          <div class="rounded-2xl bg-blue-900 text-white p-4"><i class="fa-solid fa-fire-flame-simple text-blue-300 text-2xl"></i><div class="font-black text-sm mt-2">الغاز</div><div class="text-[11px] text-white/60">قطر • الجزائر • USA</div></div>
+          <div class="rounded-2xl bg-amber-700 text-white p-4"><i class="fa-solid fa-gem text-amber-200 text-2xl"></i><div class="font-black text-sm mt-2">معادن</div><div class="text-[11px] text-white/60">إفريقيا • تشيلي</div></div>
+        </div>
+        <div class="bg-red-50 border border-red-200 rounded-2xl p-4 text-sm text-red-900"><i class="fa-solid fa-chart-line ml-2"></i><strong>قاعدة ذهبية:</strong> كل أزمة جيوسياسية (حرب، عقوبات، إغلاق مضيق هرمز/باب المندب) = قفزة فورية في الأسعار وارتفاع نسبة الطاقة في التجارة العالمية.</div>
+      </div>
+      <div class="relative min-h-[320px]">
+        <img src="https://images.unsplash.com/photo-1518709268805-4e9042af9f23?q=80&w=1200&auto=format&fit=crop" class="absolute inset-0 w-full h-full object-cover" alt="oil">
+        <div class="absolute inset-0 bg-gradient-to-t from-red-950/90 to-transparent"></div>
+        <div class="absolute bottom-6 right-6 left-6 glass rounded-2xl p-5">
+          <div class="flex justify-between items-center text-white text-sm font-black mb-3"><span>سعر برميل النفط (تذبذب)</span><span class="text-gold-light">$75 ← $120</span></div>
+          <svg viewBox="0 0 300 70" class="w-full h-[70px]"><polyline points="0,55 40,50 70,58 100,35 130,40 160,20 190,30 220,15 250,25 280,10 300,18" fill="none" stroke="#f87171" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/><circle cx="280" cy="10" r="5" fill="#c9a227"/><circle cx="280" cy="10" r="9" fill="none" stroke="#c9a227" opacity=".5"/></svg>
+          <div class="text-white/60 text-[11px] text-center">2020 ← 2026: الجائحة، حرب أوكرانيا، توترات البحر الأحمر</div>
+        </div>
+      </div>
+    </div>
+    <!-- T4 -->
+    <div id="t4" class="tab-panel hidden grid lg:grid-cols-2">
+      <div class="p-8 md:p-10">
+        <div class="flex items-center gap-3 mb-4"><span class="chip bg-teal-600 text-white">النمو المفرط • المستقبل</span><span class="chip bg-teal-100 text-teal-800">+7.8 تريليون $</span></div>
+        <h4 class="text-2xl font-black mb-4">تجارة الخدمات: الطفرة غير المادية</h4>
+        <p class="text-slate-600 leading-relaxed mb-5">تشهد <strong>نمواً مفرطاً</strong> وتتضمن النقل البحري والجوي، السياحة العالمية، الخدمات المالية، والخدمات الرقمية والاتصالات وتكنولوجيا المعلومات (IT)، حيث تجاوزت قيمتها <strong>عدة تريليونات من الدولارات سنوياً</strong>.</p>
+        <div class="space-y-2.5">
+          <div class="flex items-center gap-3"><span class="text-xs font-black w-28 shrink-0">خدمات رقمية IT</span><div class="flex-1 h-3 bg-slate-100 rounded-full overflow-hidden"><div class="h-full bg-gradient-to-l from-teal-500 to-cyan-400 rounded-full" style="width:88%"></div></div><span class="text-xs font-black text-teal-700">3.8T$</span></div>
+          <div class="flex items-center gap-3"><span class="text-xs font-black w-28 shrink-0">السياحة العالمية</span><div class="flex-1 h-3 bg-slate-100 rounded-full overflow-hidden"><div class="h-full bg-gradient-to-l from-blue-500 to-blue-300 rounded-full" style="width:45%"></div></div><span class="text-xs font-black text-blue-700">1.5T$</span></div>
+          <div class="flex items-center gap-3"><span class="text-xs font-black w-28 shrink-0">النقل البحري/الجوي</span><div class="flex-1 h-3 bg-slate-100 rounded-full overflow-hidden"><div class="h-full bg-gradient-to-l from-indigo-500 to-indigo-300 rounded-full" style="width:38%"></div></div><span class="text-xs font-black text-indigo-700">1.3T$</span></div>
+          <div class="flex items-center gap-3"><span class="text-xs font-black w-28 shrink-0">خدمات مالية</span><div class="flex-1 h-3 bg-slate-100 rounded-full overflow-hidden"><div class="h-full bg-gradient-to-l from-amber-500 to-amber-300 rounded-full" style="width:34%"></div></div><span class="text-xs font-black text-amber-700">1.2T$</span></div>
+        </div>
+        <div class="mt-5 bg-teal-50 border border-teal-200 rounded-2xl p-4 text-sm text-teal-900"><i class="fa-brands fa-amazon ml-1"></i> <strong>أمثلة:</strong> أمازون AWS، السياحة في تونس وإسبانيا، النقل (ميرسك)، التعهيد الهندي للبرمجيات.</div>
+      </div>
+      <div class="relative min-h-[320px]">
+        <img src="https://images.unsplash.com/photo-1451187580459-43490279c0fa?q=80&w=1200&auto=format&fit=crop" class="absolute inset-0 w-full h-full object-cover" alt="digital">
+        <div class="absolute inset-0 bg-gradient-to-t from-teal-950/90 to-transparent"></div>
+        <div class="absolute bottom-6 right-6 left-6 grid grid-cols-2 gap-3">
+          <div class="glass rounded-2xl p-4 text-white text-center"><i class="fa-solid fa-plane-departure text-2xl text-teal-300"></i><div class="font-black text-sm mt-1">سياحة + نقل</div><div class="text-[11px] opacity-60">2.8 تريليون $</div></div>
+          <div class="glass rounded-2xl p-4 text-white text-center"><i class="fa-solid fa-server text-2xl text-cyan-300"></i><div class="font-black text-sm mt-1">رقمنة + مالية</div><div class="text-[11px] opacity-60">5 تريليون $</div></div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Volume band -->
+  <div class="mt-8 reveal grid md:grid-cols-4 gap-4">
+    <div class="md:col-span-1 bg-navy-800 rounded-3xl p-6 text-white flex flex-col justify-center">
+      <div class="text-gold font-black text-sm mb-2">الحجم والقيمة الإجمالية</div>
+      <div class="text-4xl font-black text-gold-grad">32T$+</div>
+      <p class="text-white/60 text-xs mt-2 leading-relaxed">مستويات استثنائية تعكس اندماج الاقتصاد العالمي وتعدد حلقات الإنتاج.</p>
+    </div>
+    <div class="md:col-span-3 bg-white rounded-3xl shadow-card p-6 border">
+      <div class="flex flex-wrap gap-6 items-center">
+        <div class="flex-1 min-w-[200px]">
+          <div class="flex justify-between text-sm font-black mb-2"><span><i class="fa-solid fa-box text-navy-800 ml-1"></i> تجارة السلع</span><span class="text-navy-800">24.5T$ (76%)</span></div>
+          <div class="h-4 bg-slate-100 rounded-full overflow-hidden"><div class="h-full bg-gradient-to-l from-navy-800 to-navy-600 rounded-full" style="width:76%"></div></div>
+        </div>
+        <div class="flex-1 min-w-[200px]">
+          <div class="flex justify-between text-sm font-black mb-2"><span><i class="fa-solid fa-briefcase text-teal-600 ml-1"></i> تجارة الخدمات</span><span class="text-teal-700">7.8T$ (24%)</span></div>
+          <div class="h-4 bg-slate-100 rounded-full overflow-hidden"><div class="h-full bg-gradient-to-l from-teal-500 to-cyan-400 rounded-full" style="width:24%"></div></div>
+        </div>
+      </div>
+      <div class="mt-4 flex flex-wrap gap-2 text-[11px] font-bold">
+        <span class="bg-sand rounded-full px-3 py-1.5"><i class="fa-solid fa-arrow-right-arrow-left text-gold-dark ml-1"></i> شمال ← شمال: أكثر من 50%</span>
+        <span class="bg-sand rounded-full px-3 py-1.5"><i class="fa-solid fa-industry text-navy-800 ml-1"></i> مصنوعات ← الجنوب</span>
+        <span class="bg-sand rounded-full px-3 py-1.5"><i class="fa-solid fa-mountain text-amber-700 ml-1"></i> مواد أولية ← الشمال (استنزاف)</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- MAP -->
+<section id="mapSection" class="py-8 scroll-mt-24">
+  <div class="reveal bg-navy-900 rounded-[32px] overflow-hidden shadow-luxe border border-gold/20">
+    <div class="p-6 md:p-10 pb-0 flex flex-col lg:flex-row lg:items-end gap-4">
+      <div class="flex-1">
+        <div class="chip gold-grad text-navy-900 mb-3 inline-block"><i class="fa-solid fa-map-location-dot ml-1"></i> وثيقة منهجية: اعتماد خريطة أدفاق التجارة العالمية</div>
+        <h3 class="text-2xl md:text-3xl font-black text-white">الخريطة التفاعلية: <span class="text-gold-grad">محاور الأدفاق الكبرى</span></h3>
+        <p class="text-white/60 text-sm mt-2">اضغط على أي نقطة أو خط ملاحي لعرض التفاصيل • الكثافة العظمى بين الثالوث التقليدي + القطب الآسيوي الصاعد (الصين/آسيان)</p>
+      </div>
+      <div class="flex flex-wrap gap-2 text-[11px] font-black no-print">
+        <button class="route-filter bg-gold text-navy-900 rounded-full px-4 py-2" data-f="all">كل الأدفاق</button>
+        <button class="route-filter bg-white/10 text-white border border-white/20 rounded-full px-4 py-2" data-f="manufactured">مصنوعات</button>
+        <button class="route-filter bg-white/10 text-white border border-white/20 rounded-full px-4 py-2" data-f="energy">طاقة</button>
+        <button class="route-filter bg-white/10 text-white border border-white/20 rounded-full px-4 py-2" data-f="agri">فلاحية</button>
+      </div>
+    </div>
+    <div class="p-4 md:p-8">
+      <div class="relative">
+        <div id="map" class="w-full h-[480px] border-2 border-gold/30 shadow-luxe"></div>
+        <div class="absolute top-4 right-4 z-[500] glass !bg-navy-900/85 rounded-2xl p-4 text-white text-[11px] font-bold space-y-2 max-w-[220px]">
+          <div class="font-black text-gold-light text-xs mb-2 border-b border-white/10 pb-2">مفتاح الخريطة</div>
+          <div class="flex items-center gap-2"><span class="w-8 h-1.5 rounded-full bg-[#c9a227] inline-block"></span> مصنوعات (عريض)</div>
+          <div class="flex items-center gap-2"><span class="w-8 h-1.5 rounded-full bg-[#ef4444] inline-block"></span> طاقة ومعادن</div>
+          <div class="flex items-center gap-2"><span class="w-8 h-1.5 rounded-full bg-[#22c55e] inline-block"></span> فلاحية وغذائية</div>
+          <div class="flex items-center gap-2"><span class="w-8 h-1.5 rounded-full bg-[#06b6d4] inline-block"></span> خدمات رقمية/نقل</div>
+          <div class="flex items-center gap-2"><span class="w-3 h-3 rounded-full bg-[#c9a227] inline-block border border-white"></span> قطب تجاري رئيسي</div>
+        </div>
+      </div>
+      <div class="grid md:grid-cols-3 gap-4 mt-6">
+        <div class="glass rounded-2xl p-5 text-white"><h4 class="font-black text-gold-light mb-2 text-sm"><i class="fa-solid fa-crown ml-1"></i> الثالوث التقليدي</h4><p class="text-xs text-white/70 leading-relaxed">أمريكا الشمالية + الاتحاد الأوروبي + شرق آسيا (اليابان، كوريا الجنوبية). يستقطب الكثافة العظمى للمبادلات عبر محوري الأطلسي والهادئ.</p></div>
+        <div class="glass rounded-2xl p-5 text-white border !border-red-400/30"><h4 class="font-black text-red-300 mb-2 text-sm"><i class="fa-solid fa-fire ml-1"></i> القطب الآسيوي الصاعد</h4><p class="text-xs text-white/70 leading-relaxed">الصين + آسيان (فيتنام، سنغافورة، ماليزيا). مصنع العالم: تجميع وإعادة تصدير نحو أوروبا وأمريكا عبر قناة السويس والمحيط الهادئ.</p></div>
+        <div class="glass rounded-2xl p-5 text-white"><h4 class="font-black text-teal-300 mb-2 text-sm"><i class="fa-solid fa-anchor ml-1"></i> كيف تعلّق على الخريطة؟</h4><p class="text-xs text-white/70 leading-relaxed">1) حدّد الأقطاب 2) صِف الاتجاهات (شمال-شمال…) 3) فسّر الكثافة (قرب، قوة شرائية، تكامل) 4) استنتج التفاوت والتهميش.</p></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- GROWTH CHART -->
+<section class="py-12">
+  <div class="grid lg:grid-cols-5 gap-6">
+    <div class="lg:col-span-3 reveal-right bg-white rounded-[28px] shadow-card border p-6 md:p-8">
+      <div class="chip bg-navy-800 text-gold-light mb-3 inline-block"><i class="fa-solid fa-chart-line ml-1"></i> اعتماد مبيان: نموّ أدفاق التجارة العالمية (1980 ← 2026)</div>
+      <h3 class="text-xl font-black mb-1">من بضعة تريليونات إلى <span class="text-gold-dark">32 تريليون $</span>: تسارع تاريخي</h3>
+      <p class="text-slate-500 text-sm mb-4">التجارة تنمو بوتيرة تفوق نموّ الناتج الداخلي الخام العالمي (PIB) — إنها محرّك العولمة.</p>
+      <div class="h-[320px]"><canvas id="growthChart"></canvas></div>
+      <div class="mt-4 grid grid-cols-4 gap-2 text-center text-[11px] font-black">
+        <div class="bg-sand rounded-xl p-2.5"><div class="text-navy-800 text-base font-black">1980</div>2T$</div>
+        <div class="bg-sand rounded-xl p-2.5"><div class="text-navy-800 text-base font-black">2000</div>8T$</div>
+        <div class="bg-sand rounded-xl p-2.5"><div class="text-navy-800 text-base font-black">2015</div>22T$</div>
+        <div class="gold-grad rounded-xl p-2.5 text-navy-900"><div class="text-base font-black">2026</div>33.5T$</div>
+      </div>
+    </div>
+    <div class="lg:col-span-2 reveal-left space-y-5">
+      <div class="bg-gradient-to-br from-navy-800 to-navy-600 rounded-[28px] p-7 text-white shadow-luxe">
+        <h4 class="font-black text-lg mb-4"><i class="fa-solid fa-magnifying-glass-chart text-gold ml-2"></i> قراءة منهجية للمبيان</h4>
+        <div class="space-y-3 text-sm">
+          <div class="bg-white/10 rounded-2xl p-4 border-r-4 border-gold"><strong class="text-gold-light">الاتجاه العام:</strong> <span class="text-white/80">منحنى تصاعدي متواصل مع تسارع واضح بعد 2000 (دخول الصين منظمة التجارة 2001).</span></div>
+          <div class="bg-white/10 rounded-2xl p-4 border-r-4 border-teal-400"><strong class="text-teal-300">الاستثناءات:</strong> <span class="text-white/80">تراجع 2009 (الأزمة المالية) و2020 (كوفيد) ثم ارتداد قياسي — مرونة العولمة.</span></div>
+          <div class="bg-white/10 rounded-2xl p-4 border-r-4 border-red-400"><strong class="text-red-300">الاستنتاج:</strong> <span class="text-white/80">المبادلات = المحرك الأساسي للعولمة، وتيرتها تفوق الإنتاج نفسه.</span></div>
+        </div>
+      </div>
+      <div class="bg-white rounded-[28px] shadow-card border p-6">
+        <h4 class="font-black mb-3 text-sm"><i class="fa-solid fa-location-arrow text-gold-dark ml-1"></i> الاتجاهات الجغرافية (خلاصة)</h4>
+        <div class="space-y-3 text-sm font-bold">
+          <div><div class="flex justify-between mb-1.5"><span>محور شمال ← شمال</span><span class="text-navy-800">+50%</span></div><div class="h-3.5 bg-slate-100 rounded-full overflow-hidden"><div class="dir-bar h-full gold-grad rounded-full" style="width:0%" data-w="55%"></div></div></div>
+          <div><div class="flex justify-between mb-1.5"><span>محور شمال ← جنوب</span><span class="text-teal-700">~30%</span></div><div class="h-3.5 bg-slate-100 rounded-full overflow-hidden"><div class="dir-bar h-full bg-gradient-to-l from-teal-500 to-teal-300 rounded-full" style="width:0%" data-w="30%"></div></div></div>
+          <div><div class="flex justify-between mb-1.5"><span>محور جنوب ← جنوب</span><span class="text-slate-500">~15% (متنامٍ)</span></div><div class="h-3.5 bg-slate-100 rounded-full overflow-hidden"><div class="dir-bar h-full bg-gradient-to-l from-slate-500 to-slate-300 rounded-full" style="width:0%" data-w="15%"></div></div></div>
+        </div>
+        <p class="text-[12px] text-slate-500 mt-4 leading-relaxed">تتحرك المصنوعات نحو البلدان النامية، مقابل تدفق المواد الأولية الخام نحو الشمال — علاقة غير متكافئة.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- STRUCTURE -->
+<section id="sectors" class="py-8 scroll-mt-24">
+  <div class="reveal bg-white rounded-[32px] shadow-card border overflow-hidden">
+    <div class="bg-gradient-to-l from-navy-900 to-navy-700 p-8 md:p-10 text-white relative overflow-hidden">
+      <div class="absolute inset-0 pattern-bg opacity-30"></div>
+      <div class="relative">
+        <div class="chip gold-grad text-navy-900 mb-3 inline-block">2️⃣ بنية الأدفاق التجارية (تحليل الهيكل النوعي)</div>
+        <h3 class="text-2xl md:text-3xl font-black">من المصنوعات المهيمنة إلى <span class="text-gold-grad">الطفرة الرقمية</span></h3>
+      </div>
+    </div>
+    <div class="p-6 md:p-10 grid lg:grid-cols-3 gap-6">
+      <div class="rounded-3xl border-2 border-navy-800/10 p-6 hover:border-navy-800 hover:shadow-card transition group">
+        <div class="w-14 h-14 rounded-2xl bg-navy-800 text-gold flex items-center justify-center text-2xl mb-4 group-hover:rotate-6 transition"><i class="fa-solid fa-industry"></i></div>
+        <h4 class="font-black mb-2">هيمنة المصنوعات عالية القيمة</h4>
+        <p class="text-sm text-slate-600 leading-relaxed">الهيمنة المطلقة للصناعات الميكانيكية والإلكترونية والكيميائية المتقدمة. الدول المتقدمة والشركات العابرة للقارات تعتمد <strong>تقسيم العمل الدولي</strong>: تصميم في الشمال ← تجميع في آسيا ← استهلاك عالمي.</p>
+        <div class="mt-4 flex gap-2 text-[11px] font-black"><span class="bg-navy-800 text-white rounded-full px-3 py-1">تصميم: USA/EU</span><span class="bg-gold text-navy-900 rounded-full px-3 py-1">تجميع: الصين/فيتنام</span></div>
+      </div>
+      <div class="rounded-3xl border-2 border-red-200 p-6 hover:border-red-400 hover:shadow-card transition group bg-red-50/40">
+        <div class="w-14 h-14 rounded-2xl bg-red-600 text-white flex items-center justify-center text-2xl mb-4 group-hover:rotate-6 transition"><i class="fa-solid fa-arrow-trend-down"></i></div>
+        <h4 class="font-black mb-2">التراجع النسبي للطاقة <span class="text-xs text-red-600">(انتقائي)</span></h4>
+        <p class="text-sm text-slate-600 leading-relaxed">رغم أن النفط والغاز <strong>شرايين الحياة</strong> (من الشرق الأوسط وروسيا وإفريقيا نحو آسيا وأوروبا)، فنسبتها تتذبذب مع سعر البرميل، وتتراجع تدريجياً مع <strong>التحول نحو الطاقات المتجددة</strong>.</p>
+        <div class="mt-4 bg-white border border-red-100 rounded-xl p-3 text-[12px] font-bold text-red-800"><i class="fa-solid fa-solar-panel text-amber-500 ml-1"></i> الطاقات المتجددة: المنافس الصاعد للهيدروكربورات</div>
+      </div>
+      <div class="rounded-3xl border-2 border-teal-200 p-6 hover:border-teal-500 hover:shadow-card transition group bg-teal-50/40">
+        <div class="w-14 h-14 rounded-2xl bg-teal-600 text-white flex items-center justify-center text-2xl mb-4 group-hover:rotate-6 transition"><i class="fa-solid fa-rocket"></i></div>
+        <h4 class="font-black mb-2">الطفرة الهيكلية للخدمات</h4>
+        <p class="text-sm text-slate-600 leading-relaxed">الصعود الصاروخي للخدمات الرقمية والبرمجيات والتعهيد عن بُعد <strong dir="ltr">(Outsourcing)</strong> غيّر المفهوم الكلاسيكي للتجارة: لم تعد مقتصرة على السفن والشاحنات بل على <strong>الألياف البصرية والسحابة</strong>.</p>
+        <div class="mt-4 bg-white border border-teal-100 rounded-xl p-3 text-[12px] font-bold text-teal-800"><i class="fa-solid fa-cloud text-teal-500 ml-1"></i> التجارة غير المادية = مستقبل المبادلات</div>
+      </div>
+    </div>
+
+    <!-- TABLE -->
+    <div class="px-6 md:px-10 pb-10">
+      <div class="rounded-3xl overflow-hidden border-2 border-navy-800/10">
+        <div class="bg-navy-800 text-white p-5 flex flex-col md:flex-row md:items-center gap-3">
+          <div class="flex-1">
+            <h4 class="font-black"><i class="fa-solid fa-table text-gold ml-2"></i> اعتماد جدول: مساهمة القطاعات الاقتصادية في التجارة العالمية (القيمة والحجم)</h4>
+            <p class="text-white/60 text-xs mt-1">اضغط على عنوان أي عمود لترتيب الجدول • لاحظ هيمنة المصنوعات داخل السلع، وهيمنة الخدمات الرقمية داخل الخدمات</p>
+          </div>
+          <div class="flex gap-2 no-print">
+            <button id="showGoods" class="bg-gold text-navy-900 text-xs font-black rounded-full px-4 py-2">تجارة السلع</button>
+            <button id="showServices" class="bg-white/10 border border-white/20 text-white text-xs font-black rounded-full px-4 py-2">تجارة الخدمات</button>
+          </div>
+        </div>
+        <div class="overflow-x-auto">
+          <table id="goodsTable" class="w-full text-sm">
+            <thead><tr class="bg-sand text-navy-900 text-[13px]">
+              <th class="p-4 text-right cursor-pointer hover:text-gold-dark sortable" data-c="0">القطاع <i class="fa-solid fa-sort text-[10px]"></i></th>
+              <th class="p-4 cursor-pointer sortable" data-c="1">القيمة (تريليون $) <i class="fa-solid fa-sort text-[10px]"></i></th>
+              <th class="p-4 cursor-pointer sortable" data-c="2">النسبة من السلع <i class="fa-solid fa-sort text-[10px]"></i></th>
+              <th class="p-4">أمثلة / فاعلون</th>
+              <th class="p-4">الاتجاه</th>
+            </tr></thead>
+            <tbody class="font-medium">
+              <tr class="table-row-hl border-t bg-amber-50/60"><td class="p-4 font-black"><i class="fa-solid fa-microchip text-navy-800 ml-2"></i> السلع المصنّعة</td><td class="p-4 text-center font-black text-navy-800">17.1</td><td class="p-4 text-center"><span class="bg-navy-800 text-gold-light rounded-full px-3 py-1 font-black">70%</span></td><td class="p-4 text-xs text-slate-600">آلات، سيارات، إلكترونيات، كيمياء — الصين، ألمانيا، اليابان</td><td class="p-4 text-center text-emerald-600 font-black">▲ مستقر مهيمن</td></tr>
+              <tr class="table-row-hl border-t"><td class="p-4 font-black"><i class="fa-solid fa-oil-well text-red-600 ml-2"></i> الطاقة والمعادن</td><td class="p-4 text-center font-black">4.7</td><td class="p-4 text-center"><span class="bg-red-100 text-red-800 rounded-full px-3 py-1 font-black">19%</span></td><td class="p-4 text-xs text-slate-600">نفط، غاز، حديد، نحاس — السعودية، روسيا، أستراليا</td><td class="p-4 text-center text-amber-600 font-black">◆ متذبذب</td></tr>
+              <tr class="table-row-hl border-t"><td class="p-4 font-black"><i class="fa-solid fa-wheat-awn text-green-600 ml-2"></i> الفلاحية والغذائية</td><td class="p-4 text-center font-black">2.7</td><td class="p-4 text-xs text-slate-600">حبوب، لحوم، سكر — USA، البرازيل، EU</td><td class="p-4 text-center"><span class="bg-green-100 text-green-800 rounded-full px-3 py-1 font-black">11%</span></td><td class="p-4 text-center text-emerald-600 font-black">▲ نمو بطيء</td></tr>
+            </tbody>
+          </table>
+          <table id="servicesTable" class="w-full text-sm hidden">
+            <thead><tr class="bg-teal-50 text-teal-900 text-[13px]">
+              <th class="p-4 text-right">فرع الخدمات</th><th class="p-4">القيمة (تريليون $)</th><th class="p-4">النسبة من الخدمات</th><th class="p-4">أقطاب رئيسية</th><th class="p-4">الديناميكية</th>
+            </tr></thead>
+            <tbody class="font-medium">
+              <tr class="table-row-hl border-t bg-teal-50/60"><td class="p-4 font-black"><i class="fa-solid fa-laptop-code text-teal-600 ml-2"></i> الرقمية والاتصالات IT</td><td class="p-4 text-center font-black text-teal-700">3.8</td><td class="p-4 text-center"><span class="bg-teal-600 text-white rounded-full px-3 py-1 font-black">49%</span></td><td class="p-4 text-xs text-slate-600">USA، الهند، إيرلندا — AWS، غوغل، التعهيد</td><td class="p-4 text-center text-teal-600 font-black">🚀 صاروخي</td></tr>
+              <tr class="table-row-hl border-t"><td class="p-4 font-black"><i class="fa-solid fa-plane text-blue-600 ml-2"></i> السياحة والسفر</td><td class="p-4 text-center font-black">1.5</td><td class="p-4 text-center"><span class="bg-blue-100 text-blue-800 rounded-full px-3 py-1 font-black">19%</span></td><td class="p-4 text-xs text-slate-600">إسبانيا، فرنسا، تونس، تايلندا</td><td class="p-4 text-center text-emerald-600 font-black">▲ تعافٍ قوي</td></tr>
+              <tr class="table-row-hl border-t"><td class="p-4 font-black"><i class="fa-solid fa-ship text-indigo-600 ml-2"></i> النقل (بحري/جوي)</td><td class="p-4 text-center font-black">1.3</td><td class="p-4 text-center"><span class="bg-indigo-100 text-indigo-800 rounded-full px-3 py-1 font-black">17%</span></td><td class="p-4 text-xs text-slate-600">ميرسك، سنغافورة، بنما، الإمارات</td><td class="p-4 text-center text-emerald-600 font-black">▲ مرتبط بالسلع</td></tr>
+              <tr class="table-row-hl border-t"><td class="p-4 font-black"><i class="fa-solid fa-building-columns text-amber-600 ml-2"></i> المالية والتأمين</td><td class="p-4 text-center font-black">1.2</td><td class="p-4 text-center"><span class="bg-amber-100 text-amber-800 rounded-full px-3 py-1 font-black">15%</span></td><td class="p-4 text-xs text-slate-600">لندن، نيويورك، هونغ كونغ، دبي</td><td class="p-4 text-center text-emerald-600 font-black">▲ رقمنة مالية</td></tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="bg-amber-50 border-t border-amber-200 p-4 text-[13px] font-bold text-amber-900 flex items-start gap-2"><i class="fa-solid fa-star text-gold-dark mt-1"></i> خلاصة الجدول للحفظ: داخل السلع تهيمن المصنوعات (70%)، وداخل الخدمات تهيمن الرقمية (49% ≈ نصف الخدمات) — وهذا جوهر البنية المعاصرة للتجارة العالمية.</div>
+      </div>
+      <div class="grid md:grid-cols-2 gap-5 mt-6">
+        <div class="bg-sand rounded-3xl p-6 border"><h5 class="font-black text-sm mb-3 text-center">تركيبة تجارة السلع (%)</h5><div class="h-[220px]"><canvas id="goodsPie"></canvas></div></div>
+        <div class="bg-navy-800 rounded-3xl p-6"><h5 class="font-black text-sm mb-3 text-center text-gold-light">تركيبة تجارة الخدمات (تريليون $)</h5><div class="h-[220px]"><canvas id="servicesPie"></canvas></div></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ELEMENT 2 HEADER -->
+<section id="element2" class="pt-12 scroll-mt-20">
+  <div class="reveal relative rounded-[32px] overflow-hidden shadow-luxe">
+    <img src="https://images.unsplash.com/photo-1526304640581-d334cdbbf45e?q=80&w=2000&auto=format&fit=crop" class="absolute inset-0 w-full h-full object-cover" alt="growth">
+    <div class="absolute inset-0 bg-gradient-to-l from-teal-950 via-navy-900/95 to-navy-800/70"></div>
+    <div class="relative p-8 md:p-14 flex flex-col md:flex-row items-start md:items-center gap-6">
+      <div class="w-20 h-20 shrink-0 rounded-3xl bg-gradient-to-br from-teal-400 to-teal-600 flex items-center justify-center text-white text-4xl shadow-luxe -rotate-3"><i class="fa-solid fa-arrow-trend-up"></i></div>
+      <div>
+        <div class="text-teal-300 font-black text-sm mb-2 tracking-wide">— العنصر الثاني —</div>
+        <h2 class="text-3xl md:text-5xl font-black text-white leading-tight">تنامي الأدفاق التجارية <span class="text-gold-grad">والأطراف المتدخلة</span></h2>
+        <p class="text-white/70 mt-3 max-w-2xl">الأسباب والمؤشرات الكمية • من التحرير الجمركي إلى الحاويات • خريطة القوى: المهيمنون، الصاعدون، والمهمّشون.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FACTORS -->
+<section class="py-12">
+  <div class="text-center mb-8 reveal">
+    <h3 class="text-2xl md:text-3xl font-black">1️⃣ تنامي الأدفاق: <span class="text-teal-700">الأسباب والمؤشرات الكمية</span></h3>
+    <p class="text-slate-500 mt-2">مؤشر حاسم: التجارة تنمو أسرع من الإنتاج العالمي (PIB) — دليل أنها محرك العولمة</p>
+  </div>
+  <div class="grid lg:grid-cols-3 gap-6 mb-8">
+    <div class="reveal-right relative bg-white rounded-3xl shadow-card border p-7 overflow-hidden group hover:-translate-y-2 transition duration-500">
+      <div class="absolute top-0 right-0 left-0 h-1.5 bg-gradient-to-l from-navy-800 to-gold"></div>
+      <div class="flex items-center justify-between mb-4"><div class="w-14 h-14 rounded-2xl bg-navy-800 text-gold flex items-center justify-center text-2xl"><i class="fa-solid fa-scale-balanced"></i></div><span class="text-5xl font-black text-slate-100 group-hover:text-gold/30 transition">01</span></div>
+      <h4 class="font-black text-lg mb-2">التحرير الجمركي والمؤسساتي</h4>
+      <p class="text-sm text-slate-600 leading-relaxed mb-4">دور <strong>منظمة التجارة العالمية (OMC)</strong> واتفاقيات التبادل الحر الإقليمية في إلغاء الرسوم الجمركية وتخفيض الحواجز غير الجمركية.</p>
+      <div class="flex flex-wrap gap-2 text-[11px] font-black">
+        <span class="bg-navy-800 text-white rounded-full px-3 py-1.5">OMC • 166 عضواً</span>
+        <span class="bg-blue-100 text-blue-800 rounded-full px-3 py-1.5">USMCA 🇺🇸🇲🇽🇨🇦</span>
+        <span class="bg-amber-100 text-amber-800 rounded-full px-3 py-1.5">السوق الأوروبية 🇪🇺</span>
+      </div>
+      <div class="mt-4 bg-sand rounded-xl p-3 text-[12px] text-slate-600"><i class="fa-solid fa-arrow-down text-emerald-600 ml-1"></i> متوسط الرسوم: من <strong>40%</strong> (1950) إلى <strong>~3%</strong> اليوم في الدول المتقدمة</div>
+    </div>
+    <div class="reveal relative bg-white rounded-3xl shadow-card border p-7 overflow-hidden group hover:-translate-y-2 transition duration-500" style="transition-delay:.1s">
+      <div class="absolute top-0 right-0 left-0 h-1.5 bg-gradient-to-l from-teal-500 to-cyan-400"></div>
+      <div class="flex items-center justify-between mb-4"><div class="w-14 h-14 rounded-2xl bg-teal-600 text-white flex items-center justify-center text-2xl"><i class="fa-solid fa-container-storage"></i></div><span class="text-5xl font-black text-slate-100 group-hover:text-teal-200 transition">02</span></div>
+      <h4 class="font-black text-lg mb-2">الثورة التكنولوجية واللوجستية</h4>
+      <p class="text-sm text-slate-600 leading-relaxed mb-4">انتشار نظام <strong>الحاويات العملاقة (Containerization)</strong> الذي خفّض كلفة النقل البحري قياسياً، + الثورة الرقمية والإنترنت والتجارة الإلكترونية العابرة للحدود.</p>
+      <div class="rounded-2xl overflow-hidden relative h-[110px] mt-2">
+        <img src="https://images.unsplash.com/photo-1605745341112-85968b19335b?q=80&w=800&auto=format&fit=crop" class="w-full h-full object-cover" alt="containers">
+        <div class="absolute inset-0 bg-gradient-to-t from-navy-900/80 to-transparent flex items-end p-3"><span class="text-white text-[11px] font-black">سفينة واحدة = 24,000 حاوية TEU • 90% من السلع عبر البحر</span></div>
+      </div>
+    </div>
+    <div class="reveal-left relative bg-white rounded-3xl shadow-card border p-7 overflow-hidden group hover:-translate-y-2 transition duration-500" style="transition-delay:.2s">
+      <div class="absolute top-0 right-0 left-0 h-1.5 bg-gradient-to-l from-amber-500 to-red-500"></div>
+      <div class="flex items-center justify-between mb-4"><div class="w-14 h-14 rounded-2xl gold-grad text-navy-900 flex items-center justify-center text-2xl"><i class="fa-solid fa-building"></i></div><span class="text-5xl font-black text-slate-100 group-hover:text-gold/30 transition">03</span></div>
+      <h4 class="font-black text-lg mb-2">الشركات متعددة الجنسيات <span dir="ltr" class="text-xs text-slate-400">(SMN)</span></h4>
+      <p class="text-sm text-slate-600 leading-relaxed mb-4">تقسيم العملية الإنتاجية إلى أجزاء تُنجز في بلدان مختلفة حسب كلفة اليد العاملة، مولّدةً أدفاقاً كثيفة من <strong>السلع الوسيطة</strong> التي تعبر الحدود مرات عدة.</p>
+      <div class="bg-navy-800 rounded-xl p-3 text-[11px] font-bold text-white flex items-center justify-between gap-1 flex-wrap">
+        <span>📱 آيفون:</span><span class="text-gold-light">تصميم USA</span><span>←</span><span class="text-teal-300">مكونات 43 دولة</span><span>←</span><span class="text-red-300">تجميع الصين</span>
+      </div>
+    </div>
+  </div>
+
+  <!-- Actors -->
+  <div class="text-center mb-8 reveal">
+    <h3 class="text-2xl md:text-3xl font-black">2️⃣ الأطراف المتدخلة: <span class="text-gold-dark">المهيمنون والصاعدون والمهمّشون</span></h3>
+    <p class="text-slate-500 mt-2">اضغط على أي فئة لعرض بطاقتها التفصيلية الكاملة</p>
+  </div>
+  <div class="grid lg:grid-cols-3 gap-6" id="actorsGrid">
+    <div class="actor-card reveal-right cursor-pointer bg-gradient-to-b from-navy-800 to-navy-900 rounded-[28px] p-7 text-white shadow-luxe border-2 border-gold/40 hover:scale-[1.02] transition" data-actor="main">
+      <div class="flex items-center justify-between mb-4">
+        <div class="w-16 h-16 rounded-2xl gold-grad flex items-center justify-center text-navy-900 text-3xl"><i class="fa-solid fa-crown"></i></div>
+        <span class="bg-gold text-navy-900 font-black text-xs rounded-full px-3 py-1.5">+60% من التجارة</span>
+      </div>
+      <h4 class="font-black text-xl mb-1">الأطراف الرئيسية المتحكّمة</h4>
+      <p class="text-gold-light text-sm font-bold mb-4">القوى الكبرى: EU • USA • الصين</p>
+      <div class="flex gap-2 mb-4 text-2xl"><span class="bg-white/10 rounded-xl px-3 py-1">🇪🇺</span><span class="bg-white/10 rounded-xl px-3 py-1">🇺🇸</span><span class="bg-white/10 rounded-xl px-3 py-1">🇨🇳</span></div>
+      <ul class="text-[13px] text-white/75 space-y-2 leading-relaxed">
+        <li><i class="fa-solid fa-check text-gold ml-1"></i> <strong class="text-white">الصين:</strong> أكبر مصدّر عالمي للسلع</li>
+        <li><i class="fa-solid fa-check text-gold ml-1"></i> تكنولوجيا مطلقة + معايير الأسواق</li>
+        <li><i class="fa-solid fa-check text-gold ml-1"></i> شبكات مالية: دولار، يورو، يوان</li>
+        <li><i class="fa-solid fa-check text-gold ml-1"></i> مقرات: آبل، أمازون، تسلا…</li>
+      </ul>
+      <div class="mt-5 text-center text-[11px] text-gold-light font-black no-print"><i class="fa-solid fa-hand-pointer ml-1"></i> اضغط للتفصيل</div>
+    </div>
+    <div class="actor-card reveal cursor-pointer bg-white rounded-[28px] p-7 shadow-card border-2 border-teal-200 hover:border-teal-500 hover:scale-[1.02] transition" data-actor="emerging" style="transition-delay:.1s">
+      <div class="flex items-center justify-between mb-4">
+        <div class="w-16 h-16 rounded-2xl bg-teal-600 flex items-center justify-center text-white text-3xl"><i class="fa-solid fa-arrow-trend-up"></i></div>
+        <span class="bg-teal-600 text-white font-black text-xs rounded-full px-3 py-1.5">~ نصف تجارة السلع</span>
+      </div>
+      <h4 class="font-black text-xl mb-1">الأطراف الثانوية الفاعلة</h4>
+      <p class="text-teal-700 text-sm font-bold mb-4">الصاعدة + النفطية (الأوبك)</p>
+      <div class="flex gap-2 mb-4 text-2xl"><span class="bg-sand rounded-xl px-3 py-1">🇧🇷</span><span class="bg-sand rounded-xl px-3 py-1">🇮🇳</span><span class="bg-sand rounded-xl px-3 py-1">🇰🇷</span><span class="bg-sand rounded-xl px-3 py-1">🇸🇦</span></div>
+      <ul class="text-[13px] text-slate-600 space-y-2 leading-relaxed">
+        <li><i class="fa-solid fa-check text-teal-600 ml-1"></i> <strong>الهند:</strong> عملاق البرمجيات والتعهيد</li>
+        <li><i class="fa-solid fa-check text-teal-600 ml-1"></i> <strong>الخليج:</strong> يتحكم في أدفاق الطاقة</li>
+        <li><i class="fa-solid fa-check text-teal-600 ml-1"></i> <strong>كوريا/المكسيك:</strong> مصانع وسيطة كبرى</li>
+        <li><i class="fa-solid fa-check text-teal-600 ml-1"></i> حصة متنامية باستمرار</li>
+      </ul>
+      <div class="mt-5 text-center text-[11px] text-teal-700 font-black no-print"><i class="fa-solid fa-hand-pointer ml-1"></i> اضغط للتفصيل</div>
+    </div>
+    <div class="actor-card reveal-left cursor-pointer bg-gradient-to-b from-red-50 to-white rounded-[28px] p-7 shadow-card border-2 border-red-200 hover:border-red-400 hover:scale-[1.02] transition" data-actor="weak" style="transition-delay:.2s">
+      <div class="flex items-center justify-between mb-4">
+        <div class="w-16 h-16 rounded-2xl bg-red-600 flex items-center justify-center text-white text-3xl"><i class="fa-solid fa-heart-crack"></i></div>
+        <span class="bg-red-600 text-white font-black text-xs rounded-full px-3 py-1.5">2% ← 3% فقط!</span>
+      </div>
+      <h4 class="font-black text-xl mb-1">الأطراف الضعيفة والمهمّشة</h4>
+      <p class="text-red-700 text-sm font-bold mb-4">البلدان الأقل نمواً (PMA)</p>
+      <div class="flex gap-2 mb-4 text-2xl"><span class="bg-red-50 border border-red-100 rounded-xl px-3 py-1">🇹🇩</span><span class="bg-red-50 border border-red-100 rounded-xl px-3 py-1">🇳🇪</span><span class="bg-red-50 border border-red-100 rounded-xl px-3 py-1">🇧🇫</span></div>
+      <ul class="text-[13px] text-slate-600 space-y-2 leading-relaxed">
+        <li><i class="fa-solid fa-xmark text-red-500 ml-1"></i> تصدير خام رخيص ← استيراد مصنّع غالٍ</li>
+        <li><i class="fa-solid fa-xmark text-red-500 ml-1"></i> <strong class="text-red-700">تدهور شروط التبادل</strong></li>
+        <li><i class="fa-solid fa-xmark text-red-500 ml-1"></i> عجز تجاري + تبعية + مديونية</li>
+        <li><i class="fa-solid fa-xmark text-red-500 ml-1"></i> حلقة مفرغة من التخلف</li>
+      </ul>
+      <div class="mt-5 text-center text-[11px] text-red-600 font-black no-print"><i class="fa-solid fa-hand-pointer ml-1"></i> اضغط للتفصيل</div>
+    </div>
+  </div>
+
+  <!-- Actor detail panel -->
+  <div id="actorDetail" class="hidden mt-6 rounded-[28px] overflow-hidden shadow-luxe border-2"></div>
+
+  <!-- Inequality chart -->
+  <div class="mt-8 grid lg:grid-cols-5 gap-6">
+    <div class="lg:col-span-3 reveal-right bg-white rounded-[28px] shadow-card border p-6 md:p-8">
+      <div class="chip bg-red-700 text-white mb-3 inline-block"><i class="fa-solid fa-chart-bar ml-1"></i> اعتماد مبيان: التفاوت بين الأطراف المتدخلة (%)</div>
+      <h3 class="text-xl font-black mb-4">60% للكبار… و2% للمهمّشين: <span class="text-red-700">عولمة لامتكافئة</span></h3>
+      <div class="h-[340px]"><canvas id="actorsChart"></canvas></div>
+    </div>
+    <div class="lg:col-span-2 reveal-left flex flex-col gap-5">
+      <div class="bg-navy-900 rounded-[28px] p-7 text-white shadow-luxe relative overflow-hidden">
+        <div class="absolute -top-10 -left-10 w-40 h-40 bg-red-500/20 blur-[60px] rounded-full"></div>
+        <h4 class="font-black mb-4 relative"><i class="fa-solid fa-scale-unbalanced-flip text-red-400 ml-2"></i> آلية تدهور شروط التبادل</h4>
+        <div class="relative space-y-3 text-[13px]">
+          <div class="flex items-center gap-3 bg-white/10 rounded-2xl p-3"><span class="w-10 h-10 shrink-0 rounded-xl bg-amber-500/30 flex items-center justify-center text-xl">🌾</span><div><strong>الجنوب يصدّر:</strong> قطن، كاكاو، حديد خام<div class="text-red-300 font-black">أسعار منخفضة ومتدهورة ▼</div></div></div>
+          <div class="text-center text-gold text-xl"><i class="fa-solid fa-arrow-down-long"></i> مقابل <i class="fa-solid fa-arrow-up-long"></i></div>
+          <div class="flex items-center gap-3 bg-white/10 rounded-2xl p-3"><span class="w-10 h-10 shrink-0 rounded-xl bg-blue-500/30 flex items-center justify-center text-xl">💊</span><div><strong>الجنوب يستورد:</strong> أدوية، آلات، غذاء مصنّع<div class="text-emerald-300 font-black">أسعار مرتفعة ومتصاعدة ▲</div></div></div>
+          <div class="bg-red-500/15 border border-red-400/30 rounded-2xl p-3 text-center font-black text-red-200">النتيجة: عجز مزمن + تبعية + تهميش (2%)</div>
+        </div>
+      </div>
+      <div class="gold-grad rounded-[28px] p-6 text-navy-900 shadow-luxe">
+        <h4 class="font-black mb-2"><i class="fa-solid fa-quote-right ml-2"></i> خلاصة الأستاذ رياض سليمي</h4>
+        <p class="text-sm font-bold leading-relaxed">«التجارة العالمية ليست ساحة متكافئة: الثالوث يصنع القواعد، والصاعدون يتأقلمون ويصعدون، والضعفاء يدفعون الثمن. فهمُ هذا التفاوت هو مفتاح التفوق في مقال البكالوريا.»</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CONCLUSION -->
+<section id="conclusion" class="py-12 scroll-mt-24">
+  <div class="reveal relative rounded-[32px] overflow-hidden shadow-luxe">
+    <div class="absolute inset-0 bg-gradient-to-br from-navy-900 via-navy-800 to-teal-900"></div>
+    <div class="absolute inset-0 grid-bg opacity-40"></div>
+    <div class="relative p-8 md:p-12 grid lg:grid-cols-2 gap-10">
+      <div class="text-white">
+        <div class="chip gold-grad text-navy-900 mb-4 inline-block"><i class="fa-solid fa-flag-checkered ml-1"></i> الخاتمة: التركيب والاستشراف</div>
+        <h2 class="text-3xl font-black mb-6">التجارة العالمية: <span class="text-gold-grad">اندماجٌ يعمّق التفاوت</span></h2>
+        <div class="space-y-4 text-[15px] leading-relaxed text-white/85">
+          <p><strong class="text-gold-light">تركيب:</strong> تضاعفت أدفاق التجارة العالمية لتتجاوز 32 تريليون $، مهيمناً عليها المصنوعات (70%) والخدمات الرقمية الصاعدة، ومتركّزةً على محور شمال-شمال (+50%) بقيادة الثالوث والصين (+60%)، مقابل تهميش الجنوب الأقل نمواً (2%).</p>
+          <p><strong class="text-gold-light">تفسير:</strong> هذا التنامي ثمرة التحرير الجمركي (OMC)، وثورة الحاويات والرقمنة، واستراتيجيات الشركات متعددة الجنسيات في تقسيم العمل الدولي.</p>
+          <p><strong class="text-gold-light">حكم نقدي:</strong> العولمة التجارية محرّك للنمو، لكنها تعيد إنتاج اللاتكافؤ عبر تدهور شروط التبادل والتبعية الغذائية والتكنولوجية.</p>
+        </div>
+        <div class="mt-6 bg-white/10 border border-gold/30 rounded-2xl p-5">
+          <h4 class="font-black text-gold-light text-sm mb-3"><i class="fa-solid fa-door-open ml-2"></i> آفاق مفتوحة (سؤال الامتداد):</h4>
+          <p class="text-sm text-white/75 leading-relaxed">هل ستواصل العولمة التجارية توسعها أم أن الحمائية الجديدة (الحرب التجارية USA-الصين)، والتحول الأخضر، والذكاء الاصطناعي ستعيد رسم خريطة الأدفاق لصالح أقطاب جديدة؟ وهل يمكن لتونس أن تتحول من هامش إلى حلقة فاعلة متوسطية؟</p>
+        </div>
+      </div>
+      <div class="flex flex-col gap-5">
+        <div class="bg-white rounded-3xl p-6 shadow-luxe">
+          <h4 class="font-black mb-4 text-navy-800"><i class="fa-solid fa-list-check text-gold-dark ml-2"></i> بطاقة المراجعة السريعة (احفظها)</h4>
+          <div class="grid grid-cols-2 gap-3 text-center">
+            <div class="bg-sand rounded-2xl p-3"><div class="font-black text-navy-800">32T$</div><div class="text-[11px] text-slate-500">الإجمالي</div></div>
+            <div class="bg-sand rounded-2xl p-3"><div class="font-black text-navy-800">70%</div><div class="text-[11px] text-slate-500">المصنوعات</div></div>
+            <div class="bg-sand rounded-2xl p-3"><div class="font-black text-navy-800">11%</div><div class="text-[11px] text-slate-500">الفلاحية</div></div>
+            <div class="bg-sand rounded-2xl p-3"><div class="font-black text-teal-700">7.8T$</div><div class="text-[11px] text-slate-500">الخدمات</div></div>
+            <div class="bg-navy-800 rounded-2xl p-3 text-white"><div class="font-black text-gold-light">60%+</div><div class="text-[11px] opacity-60">الكبار</div></div>
+            <div class="bg-red-600 rounded-2xl p-3 text-white"><div class="font-black">2%</div><div class="text-[11px] opacity-80">المهمّشون</div></div>
+          </div>
+          <div class="mt-4 flex flex-wrap gap-2 text-[11px] font-black justify-center">
+            <span class="border border-navy-800/20 rounded-full px-3 py-1">OMC</span><span class="border border-navy-800/20 rounded-full px-3 py-1">الحاويات</span><span class="border border-navy-800/20 rounded-full px-3 py-1">SMN</span><span class="border border-navy-800/20 rounded-full px-3 py-1">الثالوث</span><span class="border border-navy-800/20 rounded-full px-3 py-1">التعهيد</span><span class="border border-navy-800/20 rounded-full px-3 py-1">تدهور التبادل</span>
+          </div>
+        </div>
+        <div class="bg-white/10 border border-white/15 rounded-3xl p-6 backdrop-blur">
+          <h4 class="font-black text-white mb-3 text-sm"><i class="fa-solid fa-pen-ruler text-gold ml-2"></i> منهجية المقال الجغرافي (باك آداب)</h4>
+          <ol class="text-[13px] text-white/75 space-y-2 font-medium">
+            <li><strong class="text-gold-light">1. مقدمة:</strong> سياق العولمة + إعلان الإشكالية + إعلان التصميم (بنية / تنامٍ وفاعلون).</li>
+            <li><strong class="text-gold-light">2. عنصر 1:</strong> وصف الأصناف والنسب + تحليل البنية + توظيف الخريطة والجدول.</li>
+            <li><strong class="text-gold-light">3. عنصر 2:</strong> تفسير النمو (3 عوامل) + تصنيف الأطراف + مبيان التفاوت.</li>
+            <li><strong class="text-gold-light">4. خاتمة:</strong> تركيب + حكم + سؤال امتداد حول تونس أو الحمائية.</li>
+          </ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- QUIZ -->
+<section id="quiz" class="py-12 scroll-mt-24">
+  <div class="reveal bg-white rounded-[32px] shadow-luxe border-2 border-gold/30 overflow-hidden">
+    <div class="gold-grad p-8 md:p-10 text-navy-900 relative overflow-hidden">
+      <i class="fa-solid fa-brain absolute -left-6 -bottom-8 text-[150px] opacity-15"></i>
+      <div class="relative flex flex-col md:flex-row md:items-center gap-4">
+        <div class="flex-1">
+          <div class="text-xs font-black bg-navy-900 text-gold-light rounded-full px-3 py-1 inline-block mb-3">التقييم الذاتي التفاعلي • 8 أسئلة</div>
+          <h2 class="text-3xl font-black">اختبر نفسك: هل أتقنت الدرس؟</h2>
+          <p class="font-bold text-navy-800/70 text-sm mt-2">أجب عن الأسئلة واحصل على تقييم فوري + نصيحة الأستاذ. النجاح من 12/20.</p>
+        </div>
+        <div class="flex items-center gap-4">
+          <div class="relative w-[110px] h-[110px]">
+            <svg class="w-full h-full -rotate-90" viewBox="0 0 100 100"><circle cx="50" cy="50" r="42" fill="none" stroke="rgba(11,29,58,.15)" stroke-width="10"/><circle id="quizRing" class="progress-ring" cx="50" cy="50" r="42" fill="none" stroke="#0b1d3a" stroke-width="10" stroke-linecap="round" stroke-dasharray="264" stroke-dashoffset="264"/></svg>
+            <div class="absolute inset-0 flex flex-col items-center justify-center"><span id="quizScore" class="font-black text-2xl">0</span><span class="text-[10px] font-black opacity-60">/ 8</span></div>
+          </div>
+          <button id="restartQuiz" class="no-print bg-navy-900 text-gold-light font-black text-sm rounded-2xl px-5 py-3 hover:scale-105 transition"><i class="fa-solid fa-rotate-right ml-1"></i> إعادة</button>
+        </div>
+      </div>
+      <div class="relative mt-5 h-2.5 bg-navy-900/15 rounded-full overflow-hidden"><div id="quizProgress" class="h-full bg-navy-900 rounded-full transition-all duration-500" style="width:0%"></div></div>
+    </div>
+    <div class="p-6 md:p-10">
+      <div id="quizBox"></div>
+      <div id="quizResult" class="hidden mt-6 rounded-3xl p-8 text-center"></div>
+    </div>
+  </div>
+</section>
+
+<!-- TEACHER FOOTER CARD -->
+<section class="pb-14">
+  <div class="reveal grid md:grid-cols-3 gap-6">
+    <div class="bg-navy-800 rounded-3xl p-7 text-white shadow-luxe flex items-center gap-5">
+      <img src="https://images.unsplash.com/photo-1560250097-0b93528c311a?q=80&w=200&auto=format&fit=crop" class="w-20 h-20 rounded-2xl object-cover border-2 border-gold" alt="prof">
+      <div><div class="font-black text-lg">الأستاذ رياض سليمي</div><div class="text-white/60 text-sm">الجغرافيا • 4 آداب • تونس</div><div class="text-gold-light text-xs font-bold mt-1"><i class="fa-solid fa-envelope ml-1"></i> درس تفاعلي 2026/2027</div></div>
+    </div>
+    <div class="bg-white rounded-3xl p-7 shadow-card border flex items-center gap-4">
+      <div class="w-14 h-14 shrink-0 rounded-2xl gold-grad flex items-center justify-center text-navy-900 text-2xl"><i class="fa-solid fa-download"></i></div>
+      <div class="flex-1"><div class="font-black">احفظ الدرس أو اطبعه</div><div class="text-xs text-slate-500">نسخة ورقية للمراجعة ليلة الامتحان</div></div>
+      <button onclick="window.print()" class="no-print bg-navy-800 text-white font-black text-sm rounded-2xl px-5 py-3 hover:bg-navy-700 transition">طباعة <i class="fa-solid fa-print mr-1"></i></button>
+    </div>
+    <div class="bg-white rounded-3xl p-7 shadow-card border flex items-center gap-4">
+      <div class="w-14 h-14 shrink-0 rounded-2xl bg-teal-600 flex items-center justify-center text-white text-2xl"><i class="fa-solid fa-share-nodes"></i></div>
+      <div class="flex-1"><div class="font-black">شارك الدرس مع زملائك</div><div class="text-xs text-slate-500">رابط المنصة التفاعلية</div></div>
+      <button id="shareBtn" class="no-print bg-teal-600 text-white font-black text-sm rounded-2xl px-5 py-3 hover:bg-teal-700 transition">نسخ الرابط</button>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<footer class="bg-navy-900 text-white border-t-2 border-gold/40">
+  <div class="max-w-7xl mx-auto px-4 py-10 grid md:grid-cols-4 gap-8 text-sm">
+    <div class="md:col-span-2">
+      <div class="flex items-center gap-3 mb-4"><div class="w-11 h-11 rounded-xl gold-grad flex items-center justify-center text-navy-900"><i class="fa-solid fa-earth-africa"></i></div><div class="font-black text-lg">درس أدفاق التجارة العالمية</div></div>
+      <p class="text-white/60 leading-relaxed">منصة تعليمية تفاعلية مطابقة لمنهاج الجغرافيا — السنة الرابعة آداب — وزارة التربية، الجمهورية التونسية (2026/2027). إعداد الأستاذ رياض سليمي. جميع الخرائط والمبيانات والجداول لأغراض بيداغوجية.</p>
+    </div>
+    <div>
+      <h5 class="font-black text-gold-light mb-3">أقسام الدرس</h5>
+      <ul class="space-y-2 text-white/60 font-medium">
+        <li><a href="#objectives" class="hover:text-gold-light">الأهداف</a></li>
+        <li><a href="#concepts" class="hover:text-gold-light">المفاهيم</a></li>
+        <li><a href="#element1" class="hover:text-gold-light">العنصر الأول</a></li>
+        <li><a href="#element2" class="hover:text-gold-light">العنصر الثاني</a></li>
+      </ul>
+    </div>
+    <div>
+      <h5 class="font-black text-gold-light mb-3">وثائق الدرس</h5>
+      <ul class="space-y-2 text-white/60 font-medium">
+        <li><a href="#mapSection" class="hover:text-gold-light">خريطة الأدفاق العالمية</a></li>
+        <li><a href="#sectors" class="hover:text-gold-light">جدول القطاعات</a></li>
+        <li><a href="#quiz" class="hover:text-gold-light">الاختبار التفاعلي</a></li>
+        <li><a href="#conclusion" class="hover:text-gold-light">الخاتمة والمنهجية</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="border-t border-white/10 py-4 text-center text-white/40 text-xs">© 2026/2027 الأستاذ رياض سليمي • الجمهورية التونسية — وزارة التربية • صُنع بشغف لنجاح تلاميذ البكالوريا آداب</div>
+</footer>
+
+<!-- FLOATING -->
+<div class="fixed bottom-5 left-5 z-[60] flex flex-col gap-2 no-print">
+  <button id="topBtn" class="w-12 h-12 rounded-2xl gold-grad text-navy-900 shadow-luxe hover:scale-110 transition opacity-0 pointer-events-none"><i class="fa-solid fa-arrow-up"></i></button>
+  <a href="#quiz" class="w-12 h-12 rounded-2xl bg-navy-800 border border-gold/40 text-gold flex items-center justify-center shadow-luxe hover:scale-110 transition" title="الاختبار"><i class="fa-solid fa-brain"></i></a>
 </div>
 
-<div class="reveal bg-white rounded-[28px] shadow-card border overflow-hidden">
-<!-- T1 -->
-<div id="t1" class="tab-panel grid lg:grid-cols-2">
-<div class="p-8 md:p-10">
-<div class="flex items-center gap-3 mb-4"><span class="chip bg-navy-800 text-gold-light">العمود الفقري للمبادلات</span><span class="chip bg-amber-100 text-amber-800">+70% من تجارة السلع</span></div>
-<h4 class="text-2xl font-black mb-4">السلع المصنّعة: قلب التجارة العالمية</h4>
-<p class="text-slate-600 leading-relaxed mb-5">تشكّل العمود الفقري للمبادلات الدولية بنسبة تتجاوز <strong>70%</strong> من إجمالي تجارة السلع. تشمل المعدات الآلية، وسائل النقل (طائرات، سيارات)، المواد الكيميائية، والمنتجات الإلكترونية الدقيقة عالية القيمة المضافة.</p>
-<div class="grid grid-cols-2 gap-3 mb-5">
-<div class="bg-sand rounded-2xl p-4 text-center"><i class="fa-solid fa-plane text-navy-800 text-2xl m
+<!-- ACTOR MODAL DATA + SCRIPTS -->
+<script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+<script>
+// ---------- NAV / PROGRESS / REVEAL ----------
+const menuBtn=document.getElementById('menuBtn'),mobileMenu=document.getElementById('mobileMenu');
+menuBtn.addEventListener('click',()=>mobileMenu.classList.toggle('hidden'));
+mobileMenu.querySelectorAll('a').forEach(a=>a.addEventListener('click',()=>mobileMenu.classList.add('hidden')));
+const readingBar=document.getElementById('readingBar'),topBtn=document.getElementById('topBtn');
+window.addEventListener('scroll',()=>{
+  const h=document.documentElement;const p=h.scrollTop/(h.scrollHeight-h.clientHeight)*100;readingBar.style.width=p+'%';
+  if(h.scrollTop>600){topBtn.classList.remove('opacity-0','pointer-events-none')}else{topBtn.classList.add('opacity-0','pointer-events-none')}
+  document.querySelectorAll('section[id],header[id]').forEach(s=>{
+    const r=s.getBoundingClientRect();
+    if(r.top<150&&r.bottom>150){document.querySelectorAll('.nav-link').forEach(l=>l.classList.toggle('active',l.getAttribute('href')==='#'+s.id))}
+  });
+});
+topBtn.addEventListener('click',()=>window.scrollTo({top:0,behavior:'smooth'}));
+const io=new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting){e.target.classList.add('visible');
+  e.target.querySelectorAll('.obj-bar,.dir-bar').forEach(b=>{b.style.width=b.dataset.w});
+  if(e.target.querySelectorAll('.obj-bar').length)e.target.querySelectorAll('.obj-bar').forEach(b=>b.style.width=b.dataset.w);
+}}),{threshold:.12});
+document.querySelectorAll('.reveal,.reveal-left,.reveal-right').forEach(el=>io.observe(el));
+setTimeout(()=>document.querySelectorAll('.obj-bar,.dir-bar').forEach(b=>{const r=b.getBoundingClientRect();if(r.top<innerHeight)b.style.width=b.dataset.w}),1200);
+window.addEventListener('scroll',()=>document.querySelectorAll('.obj-bar,.dir-bar').forEach(b=>{const r=b.getBoundingClientRect();if(r.top<innerHeight-50)b.style.width=b.dataset.w}));
+
+// ---------- COUNTERS ----------
+const cio=new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting){const el=e.target;const t=+el.dataset.target;let c=0;const st=t/60;const iv=setInterval(()=>{c+=st;if(c>=t){c=t;clearInterval(iv)}el.textContent=Math.round(c)},25);cio.unobserve(el)}}),{threshold:.5});
+document.querySelectorAll('.counter').forEach(el=>cio.observe(el));
+
+// ---------- CONCEPTS ----------
+const concepts=[
+ {t:'الأدفاق التجارية',e:'Flux commerciaux',d:'حركة السلع والخدمات بين الدول عبر الحدود، براً وبحراً وجواً ورقمياً، مقاسةً بالقيمة والحجم والاتجاه.',x:'مثال: تدفق السيارات من ألمانيا نحو تونس، وتدفق الفوسفات عكساً.',c:'navy',i:'fa-arrow-right-arrow-left'},
+ {t:'العولمة',e:'Mondialisation',d:'اندماج متسارع للاقتصادات والمجتمعات عبر تحرير المبادلات وتدفق الرساميل والتكنولوجيا والثقافة، تقودها الشركات الكبرى.',x:'مثال: آيفون واحد يجمع 43 دولة في سلسلة إنتاجه.',c:'gold',i:'fa-globe'},
+ {t:'الثالوث العالمي (Triade)',e:'La Triade',d:'الأقطاب الثلاثة المهيمنة تاريخياً: أمريكا الشمالية، الاتحاد الأوروبي، شرق آسيا (اليابان/كوريا). تستقطب +50% من التجارة.',x:'تذكر: كل محور شمال-شمال يمر عبر أحد أضلاع الثالوث.',c:'navy',i:'fa-triangle-exclamation'},
+ {t:'الشركات متعددة الجنسيات',e:'SMN / Firmes multinationales',d:'شركات عملاقة تقسّم الإنتاج بين دول عدة حسب المزايا التفاضلية (كلفة العمل، التكنولوجيا)، مولّدة أدفاق السلع الوسيطة.',x:'مثال: آبل، سامسونغ، تويوتا، أمازون.',c:'gold',i:'fa-building'},
+ {t:'منظمة التجارة العالمية',e:'OMC / WTO',d:'مؤسسة دولية (1995، جنيف، 166 عضواً) تسهر على تحرير التجارة وفض النزاعات وخفض الرسوم والحواجز.',x:'انضمام الصين 2001 = نقطة تسارع التجارة العالمية.',c:'teal',i:'fa-scale-balanced'},
+ {t:'التبادل الحر والتحرير الجمركي',e:'Libre-échange',d:'إلغاء الرسوم الجمركية والحصص بين الدول عبر اتفاقيات (USMCA، السوق الأوروبية) لتسهيل تدفق السلع.',x:'متوسط الرسوم هوى من 40% إلى ~3% في الشمال.',c:'teal',i:'fa-handshake'},
+ {t:'الحاويات',e:'Conteneurisation',d:'نظام نقل موحّد بصناديق معدنية عملاقة قابلة للشحن البري والبحري، خفّض كلفة النقل ورفع سرعته بشكل قياسي.',x:'سفينة واحدة تحمل 24,000 حاوية؛ 90% من السلع عبر البحر.',c:'navy',i:'fa-container-storage'},
+ {t:'التعهيد الخارجي',e:'Outsourcing / Délocalisation',d:'إسناد خدمات (برمجة، محاسبة، مراكز نداء) لمزودين في دول أرخص عن بُعد عبر الإنترنت.',x:'مثال: الهند تصدّر البرمجيات للعالم؛ تونس في مراكز النداء.',c:'teal',i:'fa-laptop-code'},
+ {t:'تدهور شروط التبادل',e:'Détérioration des termes de l’échange',d:'تراجع أسعار صادرات الجنوب من المواد الخام مقابل ارتفاع أسعار وارداته المصنّعة، مولّداً عجزاً وتبعية هيكلية.',x:'يصدر قطناً رخيصاً ويستورد دواءً غالياً = الحلقة المفرغة.',c:'red',i:'fa-arrow-trend-down'},
+ {t:'القيمة المضافة',e:'Valeur ajoutée',d:'الفرق بين قيمة المنتج النهائي وكلفة مدخلاته؛ تتركز في التصميم والتكنولوجيا (الشمال) لا في التجميع (الجنوب).',x:'آيفون بـ1000$: حصة التجميع الصيني < 5%!',c:'gold',i:'fa-gem'},
+ {t:'التبعية الغذائية',e:'Dépendance alimentaire',d:'عجز دولة عن تغطية حاجياتها الغذائية ذاتياً، فتستورد الغذاء وتصبح رهينة الأسعار والجيوسياسة.',x:'دول الساحل الإفريقي تستورد القمح رغم أراضيها الشاسعة.',c:'red',i:'fa-wheat-awn'},
+ {t:'التجارة غير المادية',e:'Commerce immatériel',d:'مبادلات الخدمات الرقمية (برمجيات، streaming، خدمات مالية وسحابية) دون نقل فيزيائي للبضائع.',x:'اشتراك ناتفليكس أو AWS هو “استيراد خدمة” رقمية.',c:'teal',i:'fa-cloud'},
+];
+const colorMap={navy:['from-navy-800 to-navy-600','bg-navy-800'],gold:['from-[#8a6f14] to-[#c9a227]','gold-grad'],teal:['from-teal-700 to-teal-500','bg-teal-600'],red:['from-red-700 to-red-500','bg-red-600']};
+const grid=document.getElementById('conceptsGrid');
+function renderConcepts(filter=''){
+  grid.innerHTML='';
+  concepts.filter(c=>c.t.includes(filter)||c.d.includes(filter)||c.e.toLowerCase().includes(filter.toLowerCase())).forEach((c,idx)=>{
+    const [grad,solid]=colorMap[c.c];
+    const div=document.createElement('div');
+    div.className='flip-card';
+    div.innerHTML=`<div class="flip-inner">
+      <div class="flip-front bg-gradient-to-br ${grad} p-5 flex flex-col justify-between shadow-lg border border-white/20">
+        <div><div class="flex items-start justify-between"><div class="w-11 h-11 rounded-xl bg-white/20 backdrop-blur flex items-center justify-center text-white text-xl"><i class="fa-solid ${c.i}"></i></div><span class="text-[10px] font-black bg-black/25 text-white/90 rounded-full px-2.5 py-1" dir="ltr">${c.e}</span></div>
+        <h4 class="text-white font-black text-lg mt-4 leading-snug">${c.t}</h4></div>
+        <div class="text-white/60 text-[11px] font-bold mt-3 flex items-center gap-1"><i class="fa-solid fa-rotate"></i> اقلب البطاقة للتعريف</div>
+      </div>
+      <div class="flip-back bg-white p-5 border-2 border-navy-800/10 flex flex-col justify-between">
+        <p class="text-[12.5px] text-slate-700 leading-relaxed"><strong class="text-navy-800">${c.t}: </strong>${c.d}</p>
+        <div class="mt-3 text-[11.5px] bg-sand border border-gold/30 rounded-xl p-2.5 text-slate-700"><i class="fa-solid fa-lightbulb text-gold-dark ml-1"></i>${c.x}</div>
+      </div></div>`;
+    div.addEventListener('click',()=>div.classList.toggle('flipped'));
+    grid.appendChild(div);
+  });
+  if(!grid.children.length)grid.innerHTML='<div class="col-span-full text-center text-white/60 py-8">لا توجد نتائج مطابقة — جرّب كلمة أخرى</div>';
+}
+renderConcepts();
+document.getElementById('conceptSearch').addEventListener('input',e=>renderConcepts(e.target.value.trim()));
+
+// ---------- PROBLEMATIQUE ----------
+document.querySelectorAll('.prob-btn').forEach(b=>b.addEventListener('click',()=>{
+  const ans=b.querySelector('.prob-ans');const open=!ans.classList.contains('hidden');
+  document.querySelectorAll('.prob-ans').forEach(a=>a.classList.add('hidden'));
+  if(!open){ans.textContent=b.dataset.a;ans.classList.remove('hidden')}
+}));
+
+// ---------- TABS ----------
+document.querySelectorAll('.tab-btn').forEach(btn=>btn.addEventListener('click',()=>{
+  document.querySelectorAll('.tab-btn').forEach(b=>b.classList.remove('active'));btn.classList.add('active');
+  document.querySelectorAll('.tab-panel').forEach(p=>p.classList.add('hidden'));
+  const p=document.getElementById(btn.dataset.tab);p.classList.remove('hidden');p.style.animation='none';p.offsetHeight;p.style.animation='fadeIn .5s ease';
+}));
+const st=document.createElement('style');st.textContent='@keyframes fadeIn{from{opacity:0;transform:translateY(12px)}to{opacity:1;transform:none}}';document.head.appendChild(st);
+
+// ---------- TABLE TOGGLE + SORT ----------
+const gT=document.getElementById('goodsTable'),sT=document.getElementById('servicesTable');
+const bG=document.getElementById('showGoods'),bS=document.getElementById('showServices');
+function setTable(which){
+  const isG=which==='g';
+  gT.classList.toggle('hidden',!isG);sT.classList.toggle('hidden',isG);
+  bG.className=isG?'bg-gold text-navy-900 text-xs font-black rounded-full px-4 py-2':'bg-white/10 border border-white/20 text-white text-xs font-black rounded-full px-4 py-2';
+  bS.className=!isG?'bg-gold text-navy-900 text-xs font-black rounded-full px-4 py-2':'bg-white/10 border border-white/20 text-white text-xs font-black rounded-full px-4 py-2';
+}
+bG.addEventListener('click',()=>setTable('g'));bS.addEventListener('click',()=>setTable('s'));
+document.querySelectorAll('.sortable').forEach(th=>th.addEventListener('click',()=>{
+  const idx=+th.dataset.c;const tb=gT.querySelector('tbody');const rows=[...tb.rows];let asc=th.dataset.asc!=='1';th.dataset.asc=asc?'1':'0';
+  rows.sort((a,b)=>{const va=a.cells[idx].textContent.replace(/[^\d.]/g,''),vb=b.cells[idx].textContent.replace(/[^\d.]/g,'');
+    const na=parseFloat(va),nb=parseFloat(vb);
+    if(!isNaN(na)&&!isNaN(nb))return asc?na-nb:nb-na;
+    return asc?a.cells[idx].textContent.localeCompare(b.cells[idx].textContent,'ar'):b.cells[idx].textContent.localeCompare(a.cells[idx].textContent,'ar')});
+  rows.forEach(r=>tb.appendChild(r));
+}));
+
+// ---------- ACTORS DETAIL ----------
+const actorData={
+ main:{title:'الأطراف الرئيسية المتحكمة (+60%)',sub:'الاتحاد الأوروبي • الولايات المتحدة • الصين',cls:'border-gold bg-gradient-to-l from-navy-900 to-navy-700 text-white',
+  body:`<div class="grid md:grid-cols-3 gap-4 mt-4">
+   <div class="bg-white/10 rounded-2xl p-4 border border-white/15"><div class="text-2xl mb-2">🇪🇺</div><h5 class="font-black text-gold-light">الاتحاد الأوروبي (~25%)</h5><p class="text-xs text-white/70 mt-2 leading-relaxed">أول قوة تجارية باحتساب المبادلات البينية. ألمانيا (سيارات، آلات)، فرنسا (طيران، فلاحة). اليورو عملة تبادل عالمية ثانية.</p></div>
+   <div class="bg-white/10 rounded-2xl p-4 border border-white/15"><div class="text-2xl mb-2">🇺🇸</div><h5 class="font-black text-gold-light">الولايات المتحدة (~13%)</h5><p class="text-xs text-white/70 mt-2 leading-relaxed">أول مستورد عالمي، قوة تكنولوجية (آبل، أمازون، تسلا). الدولار = عملة التجارة العالمية (~60% من الفوترة).</p></div>
+   <div class="bg-white/10 rounded-2xl p-4 border border-gold/40"><div class="text-2xl mb-2">🇨🇳</div><h5 class="font-black text-gold-light">الصين (~15%)</h5><p class="text-xs text-white/70 mt-2 leading-relaxed">أكبر مصدّر عالمي للسلع. مصنع العالم + مبادرة الحزام والطريق. اليوان يصعد كعملة تسوية إقليمية.</p></div></div>
+   <div class="mt-4 bg-gold/15 border border-gold/40 rounded-2xl p-4 text-sm"><strong class="text-gold-light">أدوات التحكم:</strong> <span class="text-white/80">التكنولوجيا المطلقة • المعايير القياسية • الشبكات المالية والمصرفية • مقرات الشركات العملاقة • الأساطيل والقواعد اللوجستية.</span></div>`},
+ emerging:{title:'الأطراف الثانوية الفاعلة (الصاعدة والنفطية)',sub:'البرازيل • الهند • كوريا • المكسيك • الأوبك',cls:'border-teal-500 bg-white text-slate-800',
+  body:`<div class="grid md:grid-cols-2 gap-4 mt-4">
+   <div class="bg-teal-50 border border-teal-200 rounded-2xl p-4"><h5 class="font-black text-teal-800">🌏 الدول الصاعدة الكبرى</h5><ul class="text-xs text-slate-600 mt-2 space-y-1.5"><li>• <strong>الهند:</strong> قوة تصدير الخدمات التكنولوجية والبرمجيات + أدوية.</li><li>• <strong>كوريا الجنوبية:</strong> إلكترونيات (سامسونغ)، سيارات، سفن.</li><li>• <strong>البرازيل/المكسيك:</strong> فلاحة، سيارات، صناعات خفيفة ومتوسطة.</li></ul></div>
+   <div class="bg-amber-50 border border-amber-200 rounded-2xl p-4"><h5 class="font-black text-amber-800">🛢️ الدول النفطية (الأوبك)</h5><ul class="text-xs text-slate-600 mt-2 space-y-1.5"><li>• <strong>السعودية والإمارات:</strong> تتحكم في أدفاق الطاقة الحساسة.</li><li>• سلاح النفط والغاز كورقة جيوسياسية (أوبك+).</li><li>• فوائض مالية ضخمة تُعاد توظيفها عالمياً (صناديق سيادية).</li></ul></div></div>
+   <div class="mt-4 bg-navy-800 text-white rounded-2xl p-4 text-sm"><strong class="text-gold-light">الحصة:</strong> تقترب الدول النامية والصاعدة مجتمعة من <strong>نصف تجارة السلع</strong> — وزن متنامٍ يعيد التوازن تدريجياً.</div>`},
+ weak:{title:'الأطراف الضعيفة والمهمّشة (2% ← 3%)',sub:'إفريقيا جنوب الصحراء • أمريكا الوسطى • آسيا الهشة',cls:'border-red-400 bg-gradient-to-l from-red-50 to-white text-slate-800',
+  body:`<div class="grid md:grid-cols-3 gap-4 mt-4 text-center">
+   <div class="bg-white border border-red-200 rounded-2xl p-4"><div class="text-3xl">🇹🇩</div><h5 class="font-black text-sm mt-2">تشاد والنيجر</h5><p class="text-[11px] text-slate-500 mt-1">قطن، يورانيوم خام — تبعية غذائية حادة</p></div>
+   <div class="bg-white border border-red-200 rounded-2xl p-4"><div class="text-3xl">🇧🇫</div><h5 class="font-black text-sm mt-2">بوركينا فاسو ومالي</h5><p class="text-[11px] text-slate-500 mt-1">ذهب خام، كاكاو — أسعار يحددها الشمال</p></div>
+   <div class="bg-white border border-red-200 rounded-2xl p-4"><div class="text-3xl">🌍</div><h5 class="font-black text-sm mt-2">أمريكا الوسطى</h5><p class="text-[11px] text-slate-500 mt-1">موز، بن — اقتصاد ريعي هش</p></div></div>
+   <div class="mt-4 bg-red-600 text-white rounded-2xl p-4 text-sm leading-relaxed"><strong>الحلقة المفرغة:</strong> تصدير خام رخيص ← استيراد مصنّع غالٍ ← عجز تجاري ← مديونية ← تبعية ← تدهور شروط التبادل ← مزيد من التهميش. <strong>المشاركة الهيكلية = متلقية بامتياز.</strong></div>`}
+};
+const actorDetail=document.getElementById('actorDetail');
+document.querySelectorAll('.actor-card').forEach(c=>c.addEventListener('click',()=>{
+  const d=actorData[c.dataset.actor];
+  actorDetail.className='mt-6 rounded-[28px] overflow-hidden shadow-luxe border-2 p-6 md:p-8 '+d.cls;
+  actorDetail.innerHTML=`<div class="flex items-start justify-between gap-4"><div><h4 class="font-black text-xl">${d.title}</h4><p class="text-sm opacity-70 font-bold">${d.sub}</p></div><button id="closeActor" class="no-print shrink-0 w-10 h-10 rounded-full bg-black/20 hover:bg-black/40 font-black">✕</button></div>${d.body}`;
+  actorDetail.classList.remove('hidden');
+  actorDetail.scrollIntoView({behavior:'smooth',block:'nearest'});
+  document.getElementById('closeActor').addEventListener('click',()=>actorDetail.classList.add('hidden'));
+}));
+
+// ---------- CHARTS ----------
+Chart.defaults.font.family="'Cairo',sans-serif";Chart.defaults.font.weight='700';
+const growthCtx=document.getElementById('growthChart').getContext('2d');
+const gGrad=growthCtx.createLinearGradient(0,0,0,300);gGrad.addColorStop(0,'rgba(201,162,39,.45)');gGrad.addColorStop(1,'rgba(201,162,39,0)');
+new Chart(growthCtx,{type:'line',data:{labels:['1980','1990','2000','2008','2015','2020','2024','2026'],datasets:[
+ {label:'إجمالي التجارة (تريليون $)',data:[2,4,8,20,22,25,32,33.5],borderColor:'#0b1d3a',backgroundColor:gGrad,fill:true,tension:.45,borderWidth:3.5,pointBackgroundColor:'#c9a227',pointBorderColor:'#0b1d3a',pointRadius:6,pointHoverRadius:9},
+ {label:'تجارة السلع',data:[1.8,3.5,6.5,16,16.5,18.5,24.5,25.5],borderColor:'#c9a227',borderDash:[7,5],fill:false,tension:.45,borderWidth:2.5,pointRadius:4},
+ {label:'تجارة الخدمات',data:[0.4,0.8,1.5,4,5,6,7.5,8],borderColor:'#0ea5a4',fill:false,tension:.45,borderWidth:2.5,pointRadius:4}
+]},options:{responsive:true,maintainAspectRatio:false,interaction:{mode:'index',intersect:false},plugins:{legend:{position:'bottom',labels:{usePointStyle:true,boxWidth:8,font:{size:11}}},tooltip:{rtl:true,backgroundColor:'#0b1d3a',borderColor:'#c9a227',borderWidth:1,titleColor:'#e8c86a',callbacks:{label:c=>' '+c.dataset.label+': '+c.parsed.y+' تريليون $'}}},scales:{y:{title:{display:true,text:'تريليون دولار'},grid:{color:'rgba(11,29,58,.08)'}},x:{grid:{display:false}}}}});
+
+new Chart(document.getElementById('goodsPie'),{type:'doughnut',data:{labels:['مصنّعة 70%','طاقة ومعادن 19%','فلاحية 11%'],datasets:[{data:[70,19,11],backgroundColor:['#0b1d3a','#dc2626','#16a34a'],borderWidth:3,borderColor:'#f7f3e8',hoverOffset:10}]},options:{responsive:true,maintainAspectRatio:false,cutout:'58%',plugins:{legend:{position:'bottom',labels:{usePointStyle:true,boxWidth:8,font:{size:11}}},tooltip:{rtl:true}}}});
+new Chart(document.getElementById('servicesPie'),{type:'doughnut',data:{labels:['رقمية IT 3.8','سياحة 1.5','نقل 1.3','مالية 1.2'],datasets:[{data:[3.8,1.5,1.3,1.2],backgroundColor:['#14b8a6','#60a5fa','#818cf8','#e8c86a'],borderWidth:3,borderColor:'#0b1d3a',hoverOffset:10}]},options:{responsive:true,maintainAspectRatio:false,cutout:'58%',plugins:{legend:{position:'bottom',labels:{color:'#fff',usePointStyle:true,boxWidth:8,font:{size:11}}},tooltip:{rtl:true}}}});
+new Chart(document.getElementById('actorsChart'),{type:'bar',data:{labels:['الاتحاد الأوروبي','الصين','الولايات المتحدة','اليابان+كوريا','صاعدة آسيوية/لاتينية','دول نفطية (أوبك)','بقية النامية','الأقل نمواً PMA'],datasets:[{label:'الحصة من التجارة العالمية (%)',data:[25,15,13,7,18,8,12,2],backgroundColor:['#0b1d3a','#dc2626','#1d4ed8','#7c3aed','#0d9488','#b45309','#64748b','#f87171'],borderRadius:10,borderSkipped:false}]},options:{indexAxis:'y',responsive:true,maintainAspectRatio:false,plugins:{legend:{display:false},tooltip:{rtl:true,backgroundColor:'#0b1d3a',callbacks:{label:c=>' الحصة: '+c.parsed.x+'%'}}},scales:{x:{max:30,title:{display:true,text:'% من التجارة العالمية'},grid:{color:'rgba(11,29,58,.08)'}},y:{grid:{display:false},ticks:{font:{size:11}}}}}});
+
+// ---------- LEAFLET MAP ----------
+const map=L.map('map',{worldCopyJump:true,minZoom:2,maxZoom:6,scrollWheelZoom:false}).setView([28,15],2.4);
+map.on('click',()=>map.scrollWheelZoom.enable());
+L.tileLayer('https://{s}.basemaps.cartocdn.com/dark_all/{z}/{x}/{y}{r}.png',{attribution:'© OpenStreetMap © CARTO | خريطة بيداغوجية'}).addTo(map);
+function arc(a,b,bend=12,color='#c9a227',weight=4,popup='',type='manufactured'){
+  const pts=[];const n=60;
+  for(let i=0;i<=n;i++){const t=i/n;const lat=a[0]+(b[0]-a[0])*t;const lng=a[1]+(b[1]-a[1])*t;
+    const off=Math.sin(Math.PI*t)*bend;pts.push([lat+off*0.25,lng+off*0.4]);}
+  const l=L.polyline(pts,{color,weight,opacity:.9,dashArray:'10 8',className:'flow-path'}).addTo(map);
+  l._ftype=type;if(popup)l.bindPopup(`<div style="font-family:Cairo;min-width:200px"><strong style="color:#e8c86a">${popup.split('|')[0]}</strong><br><span style="font-size:12px">${popup.split('|')[1]||''}</span></div>`);
+  return l;
+}
+const P={shanghai:[31.2,121.5],singapore:[1.3,103.8],suez:[29.9,32.5],rotterdam:[51.9,4.5],la:[33.7,-118.2],ny:[40.7,-74],santos:[-23.9,-46.3],tokyo:[35.6,139.7],busan:[35.1,129],dubai:[25.2,55.3],lagos:[6.4,3.4],mumbai:[19,72.8],tunis:[36.8,10.2],valparaiso:[-33,-71.6],capetown:[-33.9,18.4]};
+const routes=[
+ arc(P.shanghai,P.singapore,4,'#c9a227',7,'شنغهاي ← سنغافورة|مصنوعات صينية نحو المضائق: إلكترونيات وآلات','manufactured'),
+ arc(P.singapore,P.suez,10,'#c9a227',7,'سنغافورة ← السويس|الشريان الأعظم: آسيا–أوروبا عبر باب المندب وقناة السويس','manufactured'),
+ arc(P.suez,P.rotterdam,8,'#c9a227',6,'السويس ← روتردام|بوابة أوروبا: أكبر ميناء أوروبي يستقبل المصنوعات','manufactured'),
+ arc(P.shanghai,P.la,18,'#c9a227',6,'شنغهاي ← لوس أنجلوس|العبور الهادئ: مصنوعات آسيوية نحو السوق الأمريكية','manufactured'),
+ arc(P.tokyo,P.la,16,'#818cf8',4,'طوكيو ← لوس أنجلوس|سيارات وإلكترونيات يابانية/كورية نحو USA','manufactured'),
+ arc(P.ny,P.rotterdam,12,'#c9a227',5,'نيويورك ← روتردام|المحور الأطلسي: محور شمال-شمال التاريخي','manufactured'),
+ arc(P.dubai,P.suez,6,'#ef4444',6,'الخليج ← السويس|نفط وغاز خليجي نحو أوروبا عبر هرمز والسويس','energy'),
+ arc(P.dubai,P.singapore,6,'#ef4444',5,'الخليج ← آسيا|طاقة نحو الصين والهند واليابان (أكبر مستهلكين)','energy'),
+ arc(P.lagos,P.rotterdam,10,'#ef4444',3,'غرب إفريقيا ← أوروبا|نفط نيجيري ومعادن نحو المصافي الأوروبية','energy'),
+ arc(P.santos,P.rotterdam,14,'#22c55e',4,'سانتوس ← روتردام|صويا ولحوم وسكر برازيلية نحو أوروبا','agri'),
+ arc(P.santos,P.shanghai,20,'#22c55e',4,'البرازيل ← الصين|صويا وحديد نحو المصنع الصيني (جنوب-جنوب صاعد)','agri'),
+ arc(P.mumbai,P.dubai,5,'#06b6d4',3,'مومباي ← دبي|خدمات رقمية وبرمجيات + نقل جوي','manufactured'),
+ arc(P.tunis,P.rotterdam,6,'#06b6d4',2.5,'تونس ← أوروبا|نسيج، زيت زيتون، خدمات سياحية ومراكز نداء نحو EU','agri'),
+];
+function addPole(latlng,name,desc){
+  const icon=L.divIcon({className:'',html:'<div class="custom-marker"></div>',iconSize:[18,18],iconAnchor:[9,9]});
+  L.marker(latlng,{icon}).addTo(map).bindPopup(`<div style="font-family:Cairo;min-width:200px"><strong style="color:#e8c86a">${name}</strong><br><span style="font-size:12px">${desc}</span></div>`);
+}
+addPole(P.rotterdam,'🇪🇺 روتردام — بوابة أوروبا','أكبر ميناء أوروبي. يستقبل المصنوعات الآسيوية والطاقة والغذاء.');
+addPole(P.shanghai,'🇨🇳 شنغهاي — مصنع العالم','أكبر ميناء عالمي. قلب صادرات الصين المصنّعة نحو USA وأوروبا.');
+addPole(P.singapore,'🇸🇬 سنغافورة — مفترق آسيان','ثاني أكبر ميناء. عقدة الترانزيت بين الصين والهند وأوروبا.');
+addPole(P.la,'🇺🇸 لوس أنجلوس — بوابة أمريكا','يستقبل التدفق الهادئ من الصين واليابان وكوريا.');
+addPole(P.ny,'🇺🇸 نيويورك — العاصمة المالية','قطب الخدمات المالية + المحور الأطلسي نحو أوروبا.');
+addPole(P.dubai,'🇦🇪 الخليج — خزان الطاقة','نفط وغاز + موانئ إعادة تصدير (جبل علي).');
+addPole(P.santos,'🇧🇷 سانتوس — سلة الغذاء','صادرات البرازيل الفلاحية والمعدنية نحو أوروبا والصين.');
+addPole(P.tokyo,'🇯🇵 طوكيو/بوسان — شرق آسيا','إلكترونيات وسيارات عالية التكنولوجيا.');
+addPole(P.tunis,'🇹🇳 تونس — الحلقة المتوسطية','نسيج وفوسفات وسياحة وخدمات رقمية نحو السوق الأوروبية.');
+document.querySelectorAll('.route-filter').forEach(b=>b.addEventListener('click',()=>{
+  document.querySelectorAll('.route-filter').forEach(x=>x.className='route-filter bg-white/10 text-white border border-white/20 rounded-full px-4 py-2');
+  b.className='route-filter bg-gold text-navy-900 rounded-full px-4 py-2';
+  const f=b.dataset.f;
+  routes.forEach(r=>{if(f==='all'){r.setStyle({opacity:.9});r._path.style.display=''}else if(r._ftype===f){r.setStyle({opacity:1,weight:r.options.weight+1});r._path.style.display=''}else{r._path.style.display='none'}});
+}));
+
+// ---------- QUIZ ----------
+const questions=[
+ {q:'ما نسبة السلع المصنّعة من إجمالي تجارة السلع العالمية؟',o:['حوالي 30%','تتجاوز 70%','حوالي 11%','أقل من 5%'],a:1,why:'المصنوعات هي العمود الفقري (+70%): آلات، سيارات، إلكترونيات، كيمياء.'},
+ {q:'كم يبلغ الحجم التقريبي للتجارة العالمية (سلع + خدمات) سنوياً حالياً؟',o:['حوالي 5 تريليونات $','حوالي 12 تريليون $','يفوق 32 تريليون $','حوالي 100 تريليون $'],a:2,why:'24.5T$ سلع + 7.8T$ خدمات = أكثر من 32 تريليون $.'},
+ {q:'ما المحور الجغرافي الذي يستقطب أكثر من نصف التجارة الدولية؟',o:['جنوب ← جنوب','شمال ← شمال','شرق ← غرب فقط','داخل إفريقيا'],a:1,why:'الكثافة العظمى بين أقطاب الثالوث عبر محاور شمال-شمال.'},
+ {q:'أيّ منظمة لعبت الدور المركزي في التحرير الجمركي؟',o:['الأوبك (OPEC)','منظمة التجارة العالمية (OMC)','اليونسكو','الصليب الأحمر'],a:1,why:'OMC + اتفاقيات USMCA والسوق الأوروبية ألغت الرسوم وخفضت الحواجز.'},
+ {q:'ما التقنية اللوجستية التي خفّضت كلفة النقل البحري قياسياً؟',o:['الطائرات المائية','نظام الحاويات العملاقة','الجمال','السكك الحديدية فقط'],a:1,why:'الحاويات + سفن 24,000 صندوق + 90% من السلع عبر البحر.'},
+ {q:'من هي أكبر مصدّر عالمي للسلع؟',o:['الولايات المتحدة','ألمانيا','الصين','تشاد'],a:2,why:'الصين تحتل المراتب الأولى كمصنع ومصدّر عالمي أول للسلع.'},
+ {q:'كم تبلغ حصة البلدان الأقل نمواً في التجارة العالمية؟',o:['حوالي 40%','حوالي 25%','2% إلى 3% فقط','حوالي 60%'],a:2,why:'تهميش هيكلي: تصدير خام رخيص واستيراد مصنّع غالٍ = تدهور شروط التبادل.'},
+ {q:'ما الفرع المهيمن داخل تجارة الخدمات؟',o:['الخدمات الرقمية وتكنولوجيا المعلومات','غسيل السيارات','النجارة التقليدية','صيد السمك'],a:0,why:'الرقمية والبرمجيات والتعهيد ≈ 49% من الخدمات (3.8T$) — الطفرة الصاروخية.'},
+];
+let qi=0,score=0,answered=false;
+const quizBox=document.getElementById('quizBox'),quizResult=document.getElementById('quizResult'),quizProgress=document.getElementById('quizProgress'),quizScore=document.getElementById('quizScore'),quizRing=document.getElementById('quizRing');
+function renderQ(){
+  answered=false;
+  const qq=questions[qi];
+  quizProgress.style.width=(qi/questions.length*100)+'%';
+  quizBox.innerHTML=`<div class="flex items-center gap-3 mb-5"><span class="w-11 h-11 rounded-2xl bg-navy-800 text-gold font-black flex items-center justify-center">Q${qi+1}</span><div class="flex-1"><div class="text-xs font-black text-slate-400">السؤال ${qi+1} من ${questions.length}</div><h4 class="font-black text-lg leading-snug">${qq.q}</h4></div></div>
+  <div class="grid sm:grid-cols-2 gap-3">${qq.o.map((op,i)=>`<button class="quiz-opt text-right border-2 border-slate-200 rounded-2xl p-4 font-bold text-sm flex items-center gap-3 bg-slate-50" data-i="${i}"><span class="w-8 h-8 shrink-0 rounded-full bg-white border border-slate-200 flex items-center justify-center text-navy-800 font-black">${['أ','ب','ج','د'][i]}</span>${op}</button>`).join('')}</div>
+  <div id="qWhy" class="hidden mt-4 rounded-2xl p-4 text-sm font-bold"></div>
+  <div class="mt-5 flex justify-between"><span class="text-xs text-slate-400 font-bold">النقاط: ${score} / ${qi}</span><button id="nextQ" class="hidden bg-navy-800 text-white font-black text-sm rounded-2xl px-6 py-3 hover:bg-navy-700 transition">${qi===questions.length-1?'عرض النتيجة 🎓':'السؤال التالي ←'}</button></div>`;
+  quizBox.querySelectorAll('.quiz-opt').forEach(b=>b.addEventListener('click',()=>{
+    if(answered)return;answered=true;
+    const sel=+b.dataset.i;const why=document.getElementById('qWhy');
+    quizBox.querySelectorAll('.quiz-opt').forEach(x=>{
+      const i=+x.dataset.i;
+      if(i===qq.a)x.classList.add('correct');
+      else if(i===sel)x.classList.add('wrong');
+      x.style.pointerEvents='none';
+    });
+    if(sel===qq.a){score++;why.className='mt-4 rounded-2xl p-4 text-sm font-bold bg-emerald-50 border border-emerald-200 text-emerald-800';why.innerHTML='✅ إجابة صحيحة! '+qq.why}
+    else{why.className='mt-4 rounded-2xl p-4 text-sm font-bold bg-red-50 border border-red-200 text-red-800';why.innerHTML='❌ إجابة خاطئة. '+qq.why}
+    quizScore.textContent=score;quizRing.style.strokeDashoffset=264-(264*(score/questions.length));
+    document.getElementById('nextQ').classList.remove('hidden');
+  }));
+  document.getElementById('nextQ').addEventListener('click',()=>{
+    if(qi<questions.length-1){qi++;renderQ();quizBox.scrollIntoView({behavior:'smooth',block:'center'})}
+    else showResult();
+  });
+}
+function showResult(){
+  quizProgress.style.width='100%';
+  const pct=Math.round(score/questions.length*20);
+  let msg,cls,emoji;
+  if(score>=7){msg='ممتاز! مستوى بكالوريا بامتياز — أنت جاهز للمقال الجغرافي.';cls='bg-gradient-to-br from-emerald-500 to-teal-600 text-white';emoji='🏆'}
+  else if(score>=5){msg='جيّد جداً! راجع فقط نسب الجدول والخريطة وستبلغ الامتياز.';cls='gold-grad text-navy-900';emoji='🌟'}
+  else if(score>=4){msg='مقبول — أعد قراءة العنصر الثاني (الأطراف) وحاول مجدداً.';cls='bg-amber-100 border-2 border-amber-400 text-amber-900';emoji='📚'}
+  else{msg='تحتاج مراجعة شاملة: ابدأ من المفاهيم ثم الأصناف ثم أعد الاختبار.';cls='bg-red-50 border-2 border-red-300 text-red-900';emoji='💪'}
+  quizBox.innerHTML='';
+  quizResult.classList.remove('hidden');
+  quizResult.className='mt-2 rounded-3xl p-8 text-center '+cls;
+  quizResult.innerHTML=`<div class="text-6xl mb-4">${emoji}</div><h3 class="font-black text-2xl mb-2">نتيجتك: ${score} / ${questions.length} — (${pct}/20)</h3><p class="font-bold">${msg}</p><div class="mt-5 text-sm font-black opacity-80">توقيع الأستاذ رياض سليمي: «التكرار + الأرقام + الخريطة = 18+ في الجغرافيا»</div>`;
+  quizResult.scrollIntoView({behavior:'smooth',block:'center'});
+}
+document.getElementById('restartQuiz').addEventListener('click',()=>{qi=0;score=0;quizScore.textContent='0';quizRing.style.strokeDashoffset=264;quizResult.classList.add('hidden');renderQ()});
+renderQ();
+
+// ---------- SHARE ----------
+document.getElementById('shareBtn').addEventListener('click',async function(){
+  try{await navigator.clipboard.writeText(location.href);this.textContent='✓ تم النسخ!';setTimeout(()=>this.textContent='نسخ الرابط',2000)}catch(e){this.textContent='انسخ من المتصفح'}
+});
+</script>
+</body>
+     </html>
